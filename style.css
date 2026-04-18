@@ -752,6 +752,15 @@ footer span {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
+}
+
+.about-visual img {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
 }
 
 .about-visual-inner {
@@ -769,8 +778,8 @@ footer span {
     left: 0;
     width: 60%;
     height: 60%;
-    border-top: 1px solid var(--border-hover);
-    border-left: 1px solid var(--border-hover);
+    border-top: 1px solid var(--accent);
+    border-left: 1px solid var(--accent);
 }
 
 .about-visual::after {
@@ -780,8 +789,8 @@ footer span {
     right: 0;
     width: 60%;
     height: 60%;
-    border-bottom: 1px solid var(--border-hover);
-    border-right: 1px solid var(--border-hover);
+    border-bottom: 1px solid var(--accent);
+    border-right: 1px solid var(--accent);
 }
 
 .arm-logo {
