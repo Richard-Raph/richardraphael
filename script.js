@@ -1,9 +1,7 @@
 let mx = 0, my = 0, rx = 0, ry = 0;
 const cur = document.getElementById('cur');
 const ring = document.getElementById('cur-ring');
-const date = document.querySelector('footer :first-child');
 
-// date.textContent = new Date().getFullYear();
 
 document.addEventListener('mousemove', e => {
     mx = e.clientX; my = e.clientY;
@@ -43,3 +41,4 @@ const obs = new IntersectionObserver(e => {
 }, { threshold: .07 });
 
 document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+document.getElementById('year').textContent = new Date().getFullYear();
