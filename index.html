@@ -2,408 +2,727 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Richard Raphael A. — Full-Stack Developer</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Raphael A. — Software Engineer</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursor-ring"></div>
-
-  <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">ARM<span>.</span></a>
+
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-dot"></div>
+
+    <div class="nav-dot">
+      <span></span>
+      Open to remote work
+    </div>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-grid-lines"></div>
-    <div>
-      <p class="hero-eyebrow fade-up">
-        Open to <span id="work" class="work-rotate">Work</span>
-      </p>
-      <h1 class="hero-name">
-        <div class="fade-up fade-up-delay-1">Richard</div>
-        <div class="fade-up fade-up-delay-2 line2">Raphael</div>
-      </h1>
-      <div class="hero-bottom">
-        <p class="hero-desc fade-up fade-up-delay-3">
-          <strong>Full-Stack Developer</strong> &amp; <strong>Mobile Engineer</strong> crafting immersive digital
-          experiences. Web Dev Instructor at <strong>Myteacher Institute</strong>. Building the web — one commit at a
-          time.
+  <main>
+    <section id="hero">
+      <div class="hero-grid-bg"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow fu d1">
+          Software Engineer · Technical Educator · Builder
         </p>
-        <div class="hero-cta fade-up fade-up-delay-4">
-          <a href="#projects" class="btn-primary">View Work ↓</a>
-          <a href="#contact" class="btn-ghost">Get in Touch</a>
+
+        <h1 class="hero-name">
+          <span class="fu d2">Richard</span>
+          <span class="fu d3 ghost">Raphael</span>
+        </h1>
+
+        <p class="hero-mono fu d4">
+          Full-Stack Web · Mobile · DevTooling &nbsp;·&nbsp;
+          <span>3+ yrs · UTC+1</span>
+        </p>
+
+        <div class="hero-bottom">
+          <p class="hero-desc fu d4">
+            Versatile engineer with a
+            <strong>production track record</strong> across full-stack web,
+            React Native mobile, and developer tooling. Mentored
+            <strong>100+ developers</strong> to industry readiness. Available
+            remotely worldwide.
+          </p>
+
+          <div class="hero-btns fu d5">
+            <a href="#work" class="btn-a">View Work ↓</a>
+            <a href="#contact" class="btn-b">Contact</a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span class="ti"><span class="td"></span>React.js</span>
+        <span class="ti"><span class="td"></span>Next.js</span>
+        <span class="ti"><span class="td"></span>Node.js</span>
+        <span class="ti"><span class="td"></span>TypeScript</span>
+        <span class="ti"><span class="td"></span>React Native</span>
+        <span class="ti"><span class="td"></span>PostgreSQL</span>
+        <span class="ti"><span class="td"></span>MongoDB</span>
+        <span class="ti"><span class="td"></span>GraphQL</span>
+        <span class="ti"><span class="td"></span>Docker</span>
+        <span class="ti"><span class="td"></span>GitHub Actions</span>
+        <span class="ti"><span class="td"></span>Redis</span>
+        <span class="ti"><span class="td"></span>PayStack API</span>
+        <span class="ti"><span class="td"></span>Cisco AITECH 2026</span>
+        <span class="ti"><span class="td"></span>Expo</span>
+        <span class="ti"><span class="td"></span>Nest.js</span>
+        <span class="ti"><span class="td"></span>Express.js</span>
+        <span class="ti"><span class="td"></span>Firebase</span>
+        <span class="ti"><span class="td"></span>Vercel</span>
+
+        <span class="ti"><span class="td"></span>React.js</span>
+        <span class="ti"><span class="td"></span>Next.js</span>
+        <span class="ti"><span class="td"></span>Node.js</span>
+        <span class="ti"><span class="td"></span>TypeScript</span>
+        <span class="ti"><span class="td"></span>React Native</span>
+        <span class="ti"><span class="td"></span>PostgreSQL</span>
+        <span class="ti"><span class="td"></span>MongoDB</span>
+        <span class="ti"><span class="td"></span>GraphQL</span>
+        <span class="ti"><span class="td"></span>Docker</span>
+        <span class="ti"><span class="td"></span>GitHub Actions</span>
+        <span class="ti"><span class="td"></span>Redis</span>
+        <span class="ti"><span class="td"></span>PayStack API</span>
+        <span class="ti"><span class="td"></span>Cisco AITECH 2026</span>
+        <span class="ti"><span class="td"></span>Expo</span>
+        <span class="ti"><span class="td"></span>Nest.js</span>
+        <span class="ti"><span class="td"></span>Express.js</span>
+        <span class="ti"><span class="td"></span>Firebase</span>
+        <span class="ti"><span class="td"></span>Vercel</span>
       </div>
     </div>
-  </section>
 
-  <!-- TICKER -->
-  <div class="ticker-wrap">
-    <div class="ticker">
-      <span class="ticker-item"><span class="ticker-dot"></span>React</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Node.js</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>TypeScript</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Full-Stack Development</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Mobile Apps</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Tailwind CSS</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>React Router</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>CSS Architecture</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Web Dev Instructor</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Next.js</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>ARM Brand</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>React</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Node.js</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>TypeScript</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Full-Stack Development</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Mobile Apps</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Tailwind CSS</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>React Router</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>CSS Architecture</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Web Dev Instructor</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>Next.js</span>
-      <span class="ticker-item"><span class="ticker-dot"></span>ARM Brand</span>
-    </div>
-  </div>
+    <section id="about">
+      <p class="sl">01 — About</p>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <p class="section-label">01 — About</p>
-    <div class="about-grid">
-      <div>
-        <h2 class="about-heading">Developer.<br>Teacher.<br><em>Builder.</em></h2>
-        <p class="about-text">I'm <strong>Richard Raphael A.</strong> — a Full-Stack Web & App Developer based in
-          UTC+1. I build end-to-end digital products with clean code, thoughtful UI, and a relentless attention to
-          craft.</p>
-        <p class="about-text">Beyond shipping code, I teach the next generation of developers at <strong>Myteacher
-            Institute</strong>, sharing frameworks for thinking about web development that go beyond syntax.</p>
-        <p class="about-text">My interests span <strong>technology, music, and reading</strong> — the same curiosity
-          that drives me to keep learning and keep building.</p>
-        <div class="stats-row">
-          <div class="stat">
-            <span class="stat-num">29+</span>
-            <span class="stat-label">Repositories</span>
+      <div class="about-g">
+        <div>
+          <h2 class="about-h rv">
+            Engineer.<br />Educator.<br /><em>Craftsman.</em>
+          </h2>
+
+          <p class="ap rv">
+            I'm <strong>Richard Raphael A.</strong> — a Software Engineer and
+            Technical Educator based in <strong>UTC+1</strong>. I build
+            production-grade full-stack web platforms, cross-platform mobile
+            applications, and developer tools with clean code, thoughtful UI,
+            and a relentless attention to craft.
+          </p>
+
+          <p class="ap rv">
+            With 3+ years of hands-on engineering and teaching experience,
+            I've worked across client contracts, open-source tooling, and
+            mentorship — bridging the gap between complex engineering and
+            accessible technical education. My interests run across
+            <strong>technology, music, and reading</strong> — the same curiosity
+            that drives me to keep learning and keep building.
+          </p>
+
+          <div class="pill-row rv">
+            <span class="pill">Open to Remote Contracts</span>
+            <span class="pill">3+ Yrs Production</span>
+            <span class="pill">100+ Devs Mentored</span>
+            <span class="pill">UTC+1</span>
           </div>
-          <div class="stat">
-            <span class="stat-num">45★</span>
-            <span class="stat-label">Stars earned</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">87</span>
-            <span class="stat-label">Followers</span>
+
+          <div class="stats-g rv">
+            <div class="stat">
+              <span class="sn">3+</span>
+              <span class="sl2">Years exp.</span>
+            </div>
+            <div class="stat">
+              <span class="sn">100+</span>
+              <span class="sl2">Devs mentored</span>
+            </div>
+            <div class="stat">
+              <span class="sn">29+</span>
+              <span class="sl2">Repos</span>
+            </div>
+            <div class="stat">
+              <span class="sn">45★</span>
+              <span class="sl2">GitHub stars</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about-visual">
-        <span class="arm-logo">ARM</span>
-        <div class="about-visual-inner">
-          <div style="font-size:0.65rem;letter-spacing:0.15em;color:rgba(255,255,255,0.15);">RICHARD RAPHAEL A.</div>
-          <div style="font-size:0.55rem;letter-spacing:0.1em;color:rgba(255,255,255,0.08);margin-top:0.5rem;">FULL-STACK
-            DEVELOPER</div>
-          <img src="./me.jpg" alt="Me">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" style="padding-top:0; background: var(--bg);">
-    <p class="section-label">02 — Skills</p>
-    <div class="skills-grid">
-      <div class="skill-cat">
-        <div class="skill-cat-title">Frontend</div>
-        <div class="skill-tags">
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Next.js</span>
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">React Router</span>
-          <span class="skill-tag">Vite</span>
-          <span class="skill-tag">...</span>
-        </div>
-      </div>
-      <div class="skill-cat">
-        <div class="skill-cat-title">Backend & Tools</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">Nest.js</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">npm</span>
-          <span class="skill-tag">Express.js</span>
-          <span class="skill-tag">ESLint</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">...</span>
-        </div>
-      </div>
-      <div class="skill-cat">
-        <div class="skill-cat-title">Mobile</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Mobile App Dev</span>
-          <span class="skill-tag">React Native</span>
-          <span class="skill-tag">Nativewind</span>
-          <span class="skill-tag">Expo</span>
-          <span class="skill-tag">Responsive Design</span>
-          <span class="skill-tag">Flutter</span>
-          <span class="skill-tag">...</span>
-        </div>
-      </div>
-      <div class="skill-cat">
-        <div class="skill-cat-title">Other</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Leading</span>
-          <span class="skill-tag">Teaching</span>
-          <span class="skill-tag">Collaborating</span>
-          <span class="skill-tag">Mentoring</span>
-          <span class="skill-tag">Technical Writing</span>
-          <span class="skill-tag">UI/UX Thinking</span>
-          <span class="skill-tag">Singing</span>
-          <span class="skill-tag">...</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <p class="section-label">03 — Selected Work</p>
-    <div class="projects-list">
-
-      <a href="https://richard-raphael.onrender.com" target="_blank" class="project-item">
-        <span class="project-num">001</span>
         <div>
-          <div class="project-name">ARM Portfolio</div>
-          <div class="project-desc">Personal portfolio website under the ARM brand — interactive project showcases,
-            smooth animations and responsive design.</div>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Tailwind CSS</span>
-            <span class="project-tag">Vite</span>
-            <span class="project-tag">React Router</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">CSS</span>
+          <p class="sl rv" style="margin-bottom: 1.2rem">
+            Certifications
+          </p>
+
+          <div class="certs rv">
+            <div class="cert">
+              <div class="cert-ic">AI</div>
+              <div>
+                <div class="cert-nm">
+                  Cisco AI Technical Practitioner (AITECH)
+                </div>
+                <div class="cert-yr">2026</div>
+              </div>
+            </div>
+
+            <div class="cert">
+              <div class="cert-ic">AI</div>
+              <div>
+                <div class="cert-nm">
+                  Cisco AI Business Practitioner (AIBIZ)
+                </div>
+                <div class="cert-yr">2026</div>
+              </div>
+            </div>
+
+            <div class="cert">
+              <div class="cert-ic">RN</div>
+              <div>
+                <div class="cert-nm">
+                  Mobile App Development — React Native / Expo
+                </div>
+                <div class="cert-yr">2024</div>
+              </div>
+            </div>
+
+            <div class="cert">
+              <div class="cert-ic">BE</div>
+              <div>
+                <div class="cert-nm">
+                  Back-End Web Development — MERN Stack
+                </div>
+                <div class="cert-yr">2021</div>
+              </div>
+            </div>
+
+            <div class="cert">
+              <div class="cert-ic">FE</div>
+              <div>
+                <div class="cert-nm">
+                  Front-End Web Development — HTML, CSS, JS
+                </div>
+                <div class="cert-yr">2021</div>
+              </div>
+            </div>
+
+            <div class="cert">
+              <div class="cert-ic">DA</div>
+              <div>
+                <div class="cert-nm">
+                  Data Analysis — Excel, SQL
+                </div>
+                <div class="cert-yr">2021</div>
+              </div>
+            </div>
           </div>
         </div>
-        <span class="project-arrow">↗</span>
-      </a>
+      </div>
+    </section>
 
-      <a href="https://marketplace.visualstudio.com/items?itemName=RichardRapahel.gbam" target="_blank"
-        class="project-item">
-        <span class="project-num">002</span>
-        <div>
-          <div class="project-name">GBAM</div>
-          <div class="project-desc">A satisfying GBAM sound that plays when your code succeeds. A delightful developer
-            experience tool — because your wins deserve a sound effect.</div>
-          <div class="project-tags">
-            <span class="project-tag">TypeScript</span>
-            <span class="project-tag">Developer Tools</span>
-            <span class="project-tag">Open Source</span>
+    <section id="skills">
+      <p class="sl">02 — Core Competencies</p>
+
+      <div class="skills-g">
+        <div class="sc rv">
+          <h3 class="sch">Full-Stack Web</h3>
+          <div class="tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">Nest.js</span>
+            <span class="tag">REST API Design</span>
+            <span class="tag">GraphQL</span>
+            <span class="tag">Redis</span>
           </div>
         </div>
-        <span class="project-arrow">↗</span>
-      </a>
 
-      <a href="https://github.com/Myteacher-Institute" target="_blank" class="project-item">
-        <span class="project-num">003</span>
-        <div>
-          <div class="project-name">Myteacher Institute Projects</div>
-          <div class="project-desc">Curriculum, tools and resources developed for students at Myteacher Institute —
-            supporting the next wave of Nigerian web developers.</div>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Education</span>
-            <span class="project-tag">Web Dev</span>
+        <div class="sc rv">
+          <h3 class="sch">Mobile Development</h3>
+          <div class="tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Expo</span>
+            <span class="tag">Cross-Platform</span>
+            <span class="tag">Mobile UI/UX</span>
+            <span class="tag">App Store Deploy</span>
+            <span class="tag">PayStack API</span>
           </div>
         </div>
-        <span class="project-arrow">↗</span>
-      </a>
 
-      <a href="https://github.com/Richard-Raph" target="_blank" class="project-item">
-        <span class="project-num">004</span>
-        <div>
-          <div class="project-name">More on GitHub</div>
-          <div class="project-desc">29+ repositories spanning web apps, tools, experiments and open-source
-            contributions. Pull shark badge earned — twice.</div>
-          <div class="project-tags">
-            <span class="project-tag">Various</span>
-            <span class="project-tag">Open Source</span>
-            <span class="project-tag">GitHub</span>
+        <div class="sc rv">
+          <h3 class="sch">Databases</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Firebase</span>
           </div>
         </div>
-        <span class="project-arrow">↗</span>
-      </a>
 
-    </div>
-  </section>
+        <div class="sc rv">
+          <h3 class="sch">DevOps & Infra</h3>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Render</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Jest</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <p class="section-label">04 — Experience</p>
-    <div class="experience-list">
+        <div class="sc rv">
+          <h3 class="sch">Technical Education</h3>
+          <div class="tags">
+            <span class="tag">Curriculum Design</span>
+            <span class="tag">Code Mentorship</span>
+            <span class="tag">Dev Onboarding</span>
+            <span class="tag">Workshop Facilitation</span>
+            <span class="tag">Code Review</span>
+          </div>
+        </div>
 
-      <div class="exp-item">
-        <div class="exp-year">Current</div>
-        <div>
-          <div class="exp-role">Full-Stack Web & App Developer</div>
-          <div class="exp-place">Independent / Freelance · ARM Brand</div>
-          <div class="exp-text">Building full-stack web applications and mobile apps under the ARM brand. Specializing
-            in React-based SPAs with clean architecture, responsive UI, and production-grade code quality.</div>
+        <div class="sc rv">
+          <h3 class="sch">Methods & Standards</h3>
+          <div class="tags">
+            <span class="tag">Agile / Scrum</span>
+            <span class="tag">Core Web Vitals</span>
+            <span class="tag">Perf. Optimization</span>
+            <span class="tag">System Architecture</span>
+            <span class="tag">JWT / RBAC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <p class="sl">03 — Selected Work</p>
+
+      <div class="tabs">
+        <button class="tab on" data-t="web">1. Web</button>
+        <button class="tab" data-t="app">2. App</button>
+        <button class="tab" data-t="instructor">3. Instructor</button>
+        <button class="tab" data-t="other">4. Other</button>
+      </div>
+
+      <div class="panel on" id="t-web">
+
+        <a href="https://kirimacresources.site" target="_blank" class="pr rv">
+          <span class="pnum">001</span>
+          <div>
+            <div class="pn">Kirimac Resources</div>
+            <div class="pd">
+              Responsive business website for a Nigerian construction firm —
+              service showcase, projects gallery, contact forms. Google
+              Mobile-Friendly compliant. Ongoing domain + hosting management.
+            </div>
+            <div class="pmet">
+              <span class="pm">Mobile-first arch.</span>
+              <span class="pm">Google Mobile-Friendly ✓</span>
+              <span class="pm">Live · Feb 2026</span>
+            </div>
+            <div class="ptags">
+              <span class="ptag">HTML</span>
+              <span class="ptag">CSS</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">Responsive Design</span>
+            </div>
+          </div>
+          <span class="parr">↗</span>
+        </a>
+
+        <a href="https://brandhive.ng" target="_blank" class="pr rv">
+          <span class="pnum">002</span>
+          <div>
+            <div class="pn">BrandHive Concepts</div>
+            <div class="pd">
+              Performance-optimized React/Next.js client platforms with SSR,
+              Core Web Vitals tuning, modular component libraries, and full
+              CI/CD pipelines via GitHub Actions and Render.
+            </div>
+            <div class="pmet">
+              <span class="pm">↑ 25% conversions</span>
+              <span class="pm">↓ 35% bug reports</span>
+              <span class="pm">45min → 8min deploys</span>
+            </div>
+            <div class="ptags">
+              <span class="ptag">React</span>
+              <span class="ptag">Next.js</span>
+              <span class="ptag">SSR</span>
+              <span class="ptag">GitHub Actions</span>
+              <span class="ptag">WCAG 2.1</span>
+              <span class="ptag">Google Analytics API</span>
+            </div>
+          </div>
+          <span class="parr">↗</span>
+        </a>
+
+        <a href="https://clubelkabana.com" target="_blank" class="pr rv">
+          <span class="pnum">003</span>
+          <div>
+            <div class="pn">Club El-K'abana</div>
+            <div class="pd">
+              Premium nightlife and hospitality website showcasing events, reservations,
+              and brand identity. Built with a strong focus on immersive UI, responsive
+              design, fast load performance, and seamless user navigation across devices.
+            </div>
+            <div class="pmet">
+              <span class="pm">High-conversion UI</span>
+              <span class="pm">Mobile-first experience</span>
+              <span class="pm">Optimized performance</span>
+            </div>
+            <div class="ptags">
+              <span class="ptag">React</span>
+              <span class="ptag">Next.js</span>
+              <span class="ptag">Responsive Design</span>
+              <span class="ptag">UI/UX</span>
+              <span class="ptag">Performance Optimization</span>
+              <span class="ptag">Brand Experience</span>
+            </div>
+          </div>
+          <span class="parr">↗</span>
+        </a>
+
+        <a href="https://cts-cleaning.onrender.com" target="_blank" class="pr rv">
+          <span class="pnum">004</span>
+          <div>
+            <div class="pn">CTS Cleaning Website</div>
+            <div class="pd">
+              A modern cleaning service website designed to present residential
+              and commercial cleaning solutions with clarity and trust.
+              Focused on user experience, service visibility, and
+              conversion-driven layout.
+            </div>
+            <div class="pmet">
+              <span class="pm">Mobile-first arch.</span>
+              <span class="pm">Full-Stack Web App ✓</span>
+              <span class="pm">Cleaning services</span>
+            </div>
+            <div class="ptags">
+              <span class="ptag">Frontend</span>
+              <span class="ptag">UI Design</span>
+              <span class="ptag">Responsive</span>
+              <span class="ptag">Service Website</span>
+            </div>
+          </div>
+          <span class="parr">↗</span>
+        </a>
+      </div>
+
+      <div class="panel" id="t-app">
+        <div class="pr rv" style="cursor: default">
+          <span class="pnum">001</span>
+          <div>
+            <div class="pn">
+              Clients Account <span class="wip-badge">In Progress</span>
+            </div>
+            <div class="pd">
+              LegalTech cross-platform mobile app for secure legal payment
+              processing and chamber name verification. PayStack API
+              integration for PCI-DSS compliant flows. Targeting both Google
+              Play Store and Apple App Store.
+            </div>
+            <div class="pmet">
+              <span class="pm">iOS + Android</span>
+              <span class="pm">PayStack / PCI-DSS</span>
+              <span class="pm">App Store ready</span>
+            </div>
+            <div class="ptags">
+              <span class="ptag">React Native</span>
+              <span class="ptag">Expo</span>
+              <span class="ptag">PayStack API</span>
+              <span class="ptag">PCI-DSS</span>
+              <span class="ptag">Cross-Platform</span>
+            </div>
+          </div>
+          <span class="parr" style="opacity: 0.2">↗</span>
         </div>
       </div>
 
-      <div class="exp-item">
-        <div class="exp-year">Current</div>
-        <div>
-          <div class="exp-role">Web Development Instructor</div>
-          <div class="exp-place">Contract · Myteacher Institute</div>
-          <div class="exp-text">Teaching web development fundamentals and advanced concepts to students. Developing
-            curriculum that bridges theory and real-world practice in modern JavaScript and React development.</div>
+      <div class="panel" id="t-instructor">
+        <div class="pr rv" style="cursor: default">
+          <span class="pnum">001</span>
+          <div>
+            <div class="pn">Full-Stack Curriculum Design</div>
+            <div class="pd">
+              Architected and delivered a full-stack curriculum spanning HTML,
+              CSS, JS, and the MERN stack — covering deployment-focused,
+              hands-on instruction for developers entering the industry.
+            </div>
+            <div class="pmet">
+              <span class="pm">100+ students</span>
+              <span class="pm">↑ 40% project completion</span>
+              <span class="pm">8 of 10 mentees landed roles</span>
+            </div>
+            <div class="ptags">
+              <span class="ptag">HTML/CSS/JS</span>
+              <span class="ptag">MERN Stack</span>
+              <span class="ptag">Curriculum Design</span>
+              <span class="ptag">Deployment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pr rv" style="cursor: default">
+          <span class="pnum">002</span>
+          <div>
+            <div class="pn">Auth & Security Workshops</div>
+            <div class="pd">
+              Technical workshops on JWT authentication, RBAC, and secure REST
+              API design — directly improving student security implementation
+              scores across cohorts.
+            </div>
+            <div class="ptags">
+              <span class="ptag">JWT</span>
+              <span class="ptag">RBAC</span>
+              <span class="ptag">API Security</span>
+              <span class="ptag">Workshop Facilitation</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="exp-item">
-        <div class="exp-year">Open Source</div>
-        <div>
-          <div class="exp-role">Open Source Contributor</div>
-          <div class="exp-place">GitHub · @Richard-Raph</div>
-          <div class="exp-text">Actively contributing to the open source ecosystem with 29+ public repositories. Earned
-            GitHub achievements including Starstruck (45 stars) and Pull Shark x2 for meaningful pull request
-            contributions.</div>
+      <div class="panel" id="t-other">
+        <a href="https://marketplace.visualstudio.com/items?itemName=RichardRapahel.gbam" target="_blank" class="pr rv">
+          <span class="pnum">001</span>
+          <div>
+            <div class="pn">GBAM — VS Code Extension</div>
+            <div class="pd">
+              Developer productivity tool delivering audio-visual success
+              feedback. Event-driven architecture intercepts VS Code task
+              success (exit code 0) with 3s cooldown. Zero external
+              dependencies. VS Code 1.90+ compatible.
+            </div>
+            <div class="pmet">
+              <span class="pm">Zero dependencies</span>
+              <span class="pm">Native OS audio</span>
+              <span class="pm">Status bar flash</span>
+            </div>
+            <div class="ptags">
+              <span class="ptag">TypeScript</span>
+              <span class="ptag">VS Code API</span>
+              <span class="ptag">Event-Driven</span>
+              <span class="ptag">Open Source</span>
+            </div>
+          </div>
+          <span class="parr">↗</span>
+        </a>
+
+        <a href="https://github.com/Richard-Raph" target="_blank" class="pr rv">
+          <span class="pnum">002</span>
+          <div>
+            <div class="pn">GitHub — Open Source</div>
+            <div class="pd">
+              29+ public repositories. Achievements: Starstruck (45 stars),
+              Pull Shark ×2, YOLO. Active contributor across TypeScript,
+              JavaScript, and CSS projects.
+            </div>
+            <div class="ptags">
+              <span class="ptag">TypeScript</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">CSS</span>
+              <span class="ptag">Open Source</span>
+            </div>
+          </div>
+          <span class="parr">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="sl">04 — Experience</p>
+
+      <div class="exp-list">
+        <div class="exp-item rv">
+          <div>
+            <div class="ep">Jan 2024 — Present</div>
+            <div class="et">Contract</div>
+          </div>
+
+          <div>
+            <div class="er">Front-End Engineer</div>
+            <div class="ec">
+              <a href="https://brandhive.ng" target="_blank">
+                BrandHive Concepts · brandhive.ng
+              </a>
+            </div>
+
+            <ul class="ebl">
+              <li>
+                Drove <strong>25% increase in client conversion rates</strong>
+                via SSR and Core Web Vitals optimization on React/Next.js
+                platforms
+              </li>
+              <li>
+                Architected modular component libraries reducing post-launch
+                bug reports by <strong>35%</strong> across 3 client projects
+              </li>
+              <li>
+                Established CI/CD pipelines cutting deployment time from
+                <strong>45 min → 8 min</strong>, eliminating manual errors
+              </li>
+              <li>
+                Integrated third-party analytics APIs and enforced
+                <strong>WCAG 2.1 AA</strong> across all deliverables
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item rv">
+          <div>
+            <div class="ep">Jun 2022 — Present</div>
+            <div class="et">Full-Time</div>
+          </div>
+
+          <div>
+            <div class="er">
+              Lead Coding Instructor & Curriculum Architect
+            </div>
+            <div class="ec">
+              <a href="https://myteacher.ng" target="_blank">
+                Myteacher Institute · myteacher.ng
+              </a>
+            </div>
+
+            <ul class="ebl">
+              <li>
+                Designed and delivered full-stack curriculum to
+                <strong>100+ students</strong> — 40% improvement in project
+                completion rates
+              </li>
+              <li>
+                Mentored 10+ junior devs to portfolio-ready;
+                <strong>
+                  8 secured technical roles within 6 months
+                </strong>
+                of program completion
+              </li>
+              <li>
+                Led workshops on JWT, RBAC, and secure API design, improving
+                security implementation scores
+              </li>
+              <li>
+                Transitioned from graduate to lead instructor within 6 months
+                of joining
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item rv">
+          <div>
+            <div class="ep">Jan 2026 — Feb 2026</div>
+            <div class="et">Contract</div>
+          </div>
+
+          <div>
+            <div class="er">Front-End Developer</div>
+            <div class="ec">
+              <a href="https://kirimacresources.site" target="_blank">
+                Kirimac Resources · kirimacresources.site
+              </a>
+            </div>
+
+            <ul class="ebl">
+              <li>
+                Delivered fully responsive business website for Nigerian
+                construction firm — mobile-first, Google Mobile-Friendly
+                compliant
+              </li>
+              <li>
+                Ongoing domain configuration and hosting management
+                post-deployment
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section id="education">
+      <p class="sl">05 — Education</p>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-inner">
-      <p class="section-label" style="justify-content:center;">05 — Let's Talk</p>
-      <h2 class="contact-heading">
-        <div>Let's Build</div>
-        <div class="line2">Together.</div>
+      <div class="edu-g rv">
+        <div class="edu-c">
+          <div class="edu-d">BSc Computer Science (In Progress)</div>
+          <div class="edu-s">Rivers State University</div>
+          <div class="edu-y">Expected 2029</div>
+        </div>
+
+        <div class="edu-c">
+          <div class="edu-d">Full-Stack Web Development</div>
+          <div class="edu-s">Myteacher Institute</div>
+          <div class="edu-y">2021 – 2022 · Certified</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="sl" style="justify-content: center">
+        06 — Get in Touch
+      </p>
+
+      <h2 class="ch rv">
+        <span>Let's Build</span>
+        <span class="ghost">Something Real.</span>
       </h2>
-      <p class="contact-sub">Open to freelance projects, collaborations, speaking, and teaching opportunities. Don't
-        hesitate to reach out.</p>
-      <div style="margin-bottom:2.5rem;">
-        <a href="mailto:arm.techtonic@gmail.com" class="contact-email">arm.techtonic@gmail.com</a>
-      </div>
-      <div class="contact-links">
-        <a href="https://github.com/Richard-Raph" target="_blank" class="contact-link">GitHub</a>
-        <a href="https://www.linkedin.com/in/rich-tech123" target="_blank" class="contact-link">LinkedIn</a>
-        <a href="https://x.com/rich_tech123" target="_blank" class="contact-link">Twitter / X</a>
-        <a href="https://www.youtube.com/@rich_tech123" target="_blank" class="contact-link">YouTube</a>
-        <a href="https://about.me/richardraphael" target="_blank" class="contact-link">About.me</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
+      <p class="csub rv">
+        Open to remote engineering contracts, freelance projects, technical
+        consulting, and speaking opportunities. Based in UTC+1 — Earth.
+      </p>
+
+      <div class="rv">
+        <a href="mailto:richardakpan77@gmail.com" class="cemail">
+          richardakpan77@gmail.com
+        </a>
+        <br />
+        <a href="tel:+2349033935712" class="cphone">
+          +234 903 393 5712
+        </a>
+      </div>
+
+      <div class="social-row rv">
+        <a href="https://github.com/Richard-Raph" target="_blank" class="slink">GitHub</a>
+        <a href="https://www.linkedin.com/in/rich-tech123" target="_blank" class="slink">LinkedIn</a>
+        <a href="https://x.com/rich_tech123" target="_blank" class="slink">X / Twitter</a>
+        <a href="https://www.youtube.com/@rich_tech123" target="_blank" class="slink">YouTube</a>
+        <a href="https://www.facebook.com/richtech7207" target="_blank" class="slink">Facebook</a>
+        <a href="https://about.me/richardraphael" target="_blank" class="slink">About.me</a>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2026 <span>Richard Raphael A.</span> — ARM</p>
-    <p>Built with care · <span>arm.techtonic@gmail.com</span></p>
+    <p>© 2026 <span>Richard Raphael A.</span></p>
+    <p>ARM · Software Engineer · UTC+1</p>
   </footer>
 
-  <script>
-    const cursor = document.getElementById('cursor');
-    const ring = document.getElementById('cursor-ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cursor.style.transform = `translate(${mx - 4}px, ${my - 4}px)`;
-    });
-
-    function animateRing() {
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      ring.style.transform = `translate(${rx - 16}px, ${ry - 16}px)`;
-      requestAnimationFrame(animateRing);
-    }
-    animateRing();
-
-    document.querySelectorAll('a, button, .skill-tag').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.style.width = '48px'; ring.style.height = '48px';
-        ring.style.borderColor = 'rgba(200,255,87,0.7)';
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.style.width = '32px'; ring.style.height = '32px';
-        ring.style.borderColor = 'rgba(200,255,87,0.4)';
-      });
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.exp-item, .project-item, .skill-cat, .stat').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(24px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(el);
-    });
-
-    const works = [
-      "Web Apps",
-      "Teaching",
-      "Mobile Apps",
-      "UI Design",
-      "APIs",
-      "Full-Stack Systems",
-      "Open Source Tools"
-    ];
-
-    const el = document.getElementById("work");
-    let i = 0;
-
-    function changeWork() {
-      el.classList.add("out");
-
-      setTimeout(() => {
-        i = (i + 1) % works.length;
-        el.textContent = works[i];
-
-        el.classList.remove("out");
-        el.classList.add("in");
-
-        setTimeout(() => {
-          el.classList.remove("in");
-        }, 450);
-
-      }, 450);
-    }
-
-    setInterval(changeWork, 2600);
-  </script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
