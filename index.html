@@ -3,17 +3,58 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Richard Raphael A. — Software Engineer</title>
 
+  <title>Richard Raphael A • Software Engineer | Full-Stack Developer</title>
+  <meta name="description"
+    content="Richard Raphael A is a Software Engineer and Technical Educator specializing in full-stack web development, React, Node.js, and mobile applications. Available for remote work worldwide." />
+  <meta name="keywords"
+    content="Software Engineer, Full Stack Developer, React Developer, Next.js Developer, JavaScript Engineer, Node.js Developer, Mobile App Developer, React Native, Web Developer Nigeria, UI UX Engineer, Technical Educator, Backend Developer, Frontend Developer, Portfolio, Freelance Developer" />
+  <meta name="author" content="Richard Raphael A" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Theme & UI -->
+  <meta name="theme-color" content="#080808" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:title" content="Richard Raphael A • Software Engineer" />
+  <meta property="og:description"
+    content="Full-Stack Software Engineer & Technical Educator building scalable web and mobile applications with modern technologies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com" />
+  <meta property="og:image" content="https://your-domain.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Richard Raphael A Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Richard Raphael A • Software Engineer" />
+  <meta name="twitter:description" content="Full-Stack Developer, Mobile Engineer & Technical Educator." />
+  <meta name="twitter:image" content="https://your-domain.com/og-image.png" />
+
+  <!-- Accessibility / UX hints -->
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="HandheldFriendly" content="true" />
+
+  <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
 
+  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -21,8 +62,8 @@
   <div id="cur"></div>
   <div id="cur-ring"></div>
 
-  <nav>
-    <a href="#hero" class="nav-logo">ARM<span>.</span></a>
+  <nav aria-label="Primary navigation">
+    <a href="#hero" class="nav-logo" aria-label="Home">ARM<span>.</span></a>
 
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -32,8 +73,8 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <div class="nav-dot">
-      <span></span>
+    <div class="nav-dot" aria-label="Availability status">
+      <span aria-hidden="true"></span>
       Open to remote work
     </div>
   </nav>
@@ -62,8 +103,8 @@
             Versatile engineer with a
             <strong>production track record</strong> across full-stack web,
             React Native mobile, and developer tooling. Mentored
-            <strong>100+ developers</strong> to industry readiness. Available
-            remotely worldwide.
+            <strong>100+ developers</strong> to industry readiness.
+            Available remotely worldwide.
           </p>
 
           <div class="hero-btns fu d5">
@@ -74,7 +115,7 @@
       </div>
     </section>
 
-    <div class="ticker-wrap">
+    <div class="ticker-wrap" aria-hidden="true">
       <div class="ticker">
         <span class="ti"><span class="td"></span>React.js</span>
         <span class="ti"><span class="td"></span>Next.js</span>
@@ -116,8 +157,8 @@
       </div>
     </div>
 
-    <section id="about">
-      <p class="sl">01 — About</p>
+    <section id="about" aria-labelledby="about-title">
+      <p id="about-title" class="sl">01 — About</p>
 
       <div class="about-g">
         <div>
@@ -239,8 +280,8 @@
       </div>
     </section>
 
-    <section id="skills">
-      <p class="sl">02 — Core Competencies</p>
+    <section id="skills" aria-labelledby="skills-title">
+      <p id="skills-title" class="sl">02 — Core Competencies</p>
 
       <div class="skills-g">
         <div class="sc rv">
@@ -253,9 +294,10 @@
             <span class="tag">Node.js</span>
             <span class="tag">Express.js</span>
             <span class="tag">Nest.js</span>
-            <span class="tag">REST API Design</span>
+            <span class="tag">API Design</span>
             <span class="tag">GraphQL</span>
             <span class="tag">Redis</span>
+            <span class="tag">...</span>
           </div>
         </div>
 
@@ -264,10 +306,12 @@
           <div class="tags">
             <span class="tag">React Native</span>
             <span class="tag">Expo</span>
+            <span class="tag">Flutter</span>
             <span class="tag">Cross-Platform</span>
             <span class="tag">Mobile UI/UX</span>
             <span class="tag">App Store Deploy</span>
             <span class="tag">PayStack API</span>
+            <span class="tag">...</span>
           </div>
         </div>
 
@@ -278,6 +322,7 @@
             <span class="tag">MongoDB</span>
             <span class="tag">MySQL</span>
             <span class="tag">Firebase</span>
+            <span class="tag">...</span>
           </div>
         </div>
 
@@ -291,6 +336,7 @@
             <span class="tag">Firebase</span>
             <span class="tag">Jest</span>
             <span class="tag">CI/CD</span>
+            <span class="tag">...</span>
           </div>
         </div>
 
@@ -302,6 +348,7 @@
             <span class="tag">Dev Onboarding</span>
             <span class="tag">Workshop Facilitation</span>
             <span class="tag">Code Review</span>
+            <span class="tag">...</span>
           </div>
         </div>
 
@@ -313,13 +360,14 @@
             <span class="tag">Perf. Optimization</span>
             <span class="tag">System Architecture</span>
             <span class="tag">JWT / RBAC</span>
+            <span class="tag">...</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="work">
-      <p class="sl">03 — Selected Work</p>
+    <section id="work" aria-labelledby="work-title">
+      <p id="work-title" class="sl">03 — Selected Work</p>
 
       <div class="tabs">
         <button class="tab on" data-t="web">1. Web</button>
@@ -330,7 +378,7 @@
 
       <div class="panel on" id="t-web">
 
-        <a href="https://kirimacresources.site" target="_blank" class="pr rv">
+        <a href="https://kirimacresources.site" target="_blank" rel="noopener noreferrer" class="pr rv">
           <span class="pnum">001</span>
           <div>
             <div class="pn">Kirimac Resources</div>
@@ -354,33 +402,33 @@
           <span class="parr">↗</span>
         </a>
 
-        <a href="https://brandhive.ng" target="_blank" class="pr rv">
+        <a href="https://brandhive.ng" target="_blank" rel="noopener noreferrer" class="pr rv">
           <span class="pnum">002</span>
           <div>
             <div class="pn">BrandHive Concepts</div>
             <div class="pd">
-              Performance-optimized React/Next.js client platforms with SSR,
-              Core Web Vitals tuning, modular component libraries, and full
-              CI/CD pipelines via GitHub Actions and Render.
+              High quality, budget friendly, digital solutions for businesses.
+              Designed with a clean, conversion-focused layout, smooth interactions,
+              and responsive architecture to effectively present client offerings and drive engagement.
             </div>
             <div class="pmet">
-              <span class="pm">↑ 25% conversions</span>
-              <span class="pm">↓ 35% bug reports</span>
-              <span class="pm">45min → 8min deploys</span>
+              <span class="pm">Conversion-focused UX</span>
+              <span class="pm">Responsive across devices</span>
+              <span class="pm">Optimized load performance</span>
             </div>
             <div class="ptags">
               <span class="ptag">React</span>
               <span class="ptag">Next.js</span>
-              <span class="ptag">SSR</span>
-              <span class="ptag">GitHub Actions</span>
-              <span class="ptag">WCAG 2.1</span>
-              <span class="ptag">Google Analytics API</span>
+              <span class="ptag">UI/UX Design</span>
+              <span class="ptag">Responsive Design</span>
+              <span class="ptag">Performance Optimization</span>
+              <span class="ptag">Branding</span>
             </div>
           </div>
           <span class="parr">↗</span>
         </a>
 
-        <a href="https://clubelkabana.com" target="_blank" class="pr rv">
+        <a href="https://clubelkabana.com" target="_blank" rel="noopener noreferrer" class="pr rv">
           <span class="pnum">003</span>
           <div>
             <div class="pn">Club El-K'abana</div>
@@ -406,7 +454,7 @@
           <span class="parr">↗</span>
         </a>
 
-        <a href="https://cts-cleaning.onrender.com" target="_blank" class="pr rv">
+        <a href="https://cts-cleaning.onrender.com" target="_blank" rel="noopener noreferrer" class="pr rv">
           <span class="pnum">004</span>
           <div>
             <div class="pn">CTS Cleaning Website</div>
@@ -418,7 +466,7 @@
             </div>
             <div class="pmet">
               <span class="pm">Mobile-first arch.</span>
-              <span class="pm">Full-Stack Web App ✓</span>
+              <span class="pm">Full-Stack Web App</span>
               <span class="pm">Cleaning services</span>
             </div>
             <div class="ptags">
@@ -506,7 +554,8 @@
       </div>
 
       <div class="panel" id="t-other">
-        <a href="https://marketplace.visualstudio.com/items?itemName=RichardRapahel.gbam" target="_blank" class="pr rv">
+        <a href="https://marketplace.visualstudio.com/items?itemName=RichardRapahel.gbam" target="_blank"
+          rel="noopener noreferrer" class="pr rv">
           <span class="pnum">001</span>
           <div>
             <div class="pn">GBAM — VS Code Extension</div>
@@ -531,7 +580,7 @@
           <span class="parr">↗</span>
         </a>
 
-        <a href="https://github.com/Richard-Raph" target="_blank" class="pr rv">
+        <a href="https://github.com/Richard-Raph" target="_blank" rel="noopener noreferrer" class="pr rv">
           <span class="pnum">002</span>
           <div>
             <div class="pn">GitHub — Open Source</div>
@@ -552,8 +601,8 @@
       </div>
     </section>
 
-    <section id="experience">
-      <p class="sl">04 — Experience</p>
+    <section id="experience" aria-labelledby="experience-title">
+      <p id="experience-title" class="sl">04 — Experience</p>
 
       <div class="exp-list">
         <div class="exp-item rv">
@@ -565,7 +614,7 @@
           <div>
             <div class="er">Front-End Engineer</div>
             <div class="ec">
-              <a href="https://brandhive.ng" target="_blank">
+              <a href="https://brandhive.ng" target="_blank" rel="noopener noreferrer">
                 BrandHive Concepts · brandhive.ng
               </a>
             </div>
@@ -595,7 +644,7 @@
         <div class="exp-item rv">
           <div>
             <div class="ep">Jun 2022 — Present</div>
-            <div class="et">Full-Time</div>
+            <div class="et">Part-Time</div>
           </div>
 
           <div>
@@ -603,7 +652,7 @@
               Lead Coding Instructor & Curriculum Architect
             </div>
             <div class="ec">
-              <a href="https://myteacher.ng" target="_blank">
+              <a href="https://myteacher.ng" target="_blank" rel="noopener noreferrer">
                 Myteacher Institute · myteacher.ng
               </a>
             </div>
@@ -642,7 +691,7 @@
           <div>
             <div class="er">Front-End Developer</div>
             <div class="ec">
-              <a href="https://kirimacresources.site" target="_blank">
+              <a href="https://kirimacresources.site" target="_blank" rel="noopener noreferrer">
                 Kirimac Resources · kirimacresources.site
               </a>
             </div>
@@ -663,8 +712,8 @@
       </div>
     </section>
 
-    <section id="education">
-      <p class="sl">05 — Education</p>
+    <section id="education" aria-labelledby="education-title">
+      <p id="education-title" class="sl">05 — Education</p>
 
       <div class="edu-g rv">
         <div class="edu-c">
@@ -681,8 +730,8 @@
       </div>
     </section>
 
-    <section id="contact">
-      <p class="sl" style="justify-content: center">
+    <section id="contact" aria-labelledby="contact-title">
+      <p id="contact-title" class="sl" style="justify-content: center">
         06 — Get in Touch
       </p>
 
@@ -698,21 +747,26 @@
 
       <div class="rv">
         <a href="mailto:richardakpan77@gmail.com" class="cemail">
+          <span class="sr-only">Email:</span>
           richardakpan77@gmail.com
         </a>
         <br />
         <a href="tel:+2349033935712" class="cphone">
+          <span class="sr-only">Phone:</span>
           +234 903 393 5712
         </a>
       </div>
 
       <div class="social-row rv">
-        <a href="https://github.com/Richard-Raph" target="_blank" class="slink">GitHub</a>
-        <a href="https://www.linkedin.com/in/rich-tech123" target="_blank" class="slink">LinkedIn</a>
-        <a href="https://x.com/rich_tech123" target="_blank" class="slink">X / Twitter</a>
-        <a href="https://www.youtube.com/@rich_tech123" target="_blank" class="slink">YouTube</a>
-        <a href="https://www.facebook.com/richtech7207" target="_blank" class="slink">Facebook</a>
-        <a href="https://about.me/richardraphael" target="_blank" class="slink">About.me</a>
+        <a href="https://github.com/Richard-Raph" target="_blank" rel="noopener noreferrer" class="slink">GitHub</a>
+        <a href="https://www.linkedin.com/in/rich-tech123" target="_blank" rel="noopener noreferrer"
+          class="slink">LinkedIn</a>
+        <a href="https://x.com/rich_tech123" target="_blank" rel="noopener noreferrer" class="slink">X / Twitter</a>
+        <a href="https://www.youtube.com/@rich_tech123" target="_blank" rel="noopener noreferrer"
+          class="slink">YouTube</a>
+        <a href="https://www.facebook.com/richtech7207" target="_blank" rel="noopener noreferrer"
+          class="slink">Facebook</a>
+        <a href="https://about.me/richardraphael" target="_blank" rel="noopener noreferrer" class="slink">About.me</a>
       </div>
     </section>
   </main>
