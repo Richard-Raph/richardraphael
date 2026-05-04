@@ -155,7 +155,7 @@ nav {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--accent2);
+    background: #4ade80;
     animation: pulse 2.2s infinite;
 }
 
@@ -230,6 +230,7 @@ nav {
 .hero-name .ghost {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.13);
     color: transparent;
+    display: block;
 }
 
 .hero-mono {
