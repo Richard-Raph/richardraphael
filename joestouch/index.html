@@ -5,127 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joe's Touch — A Touch of Excellence</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="pre-logo">Joe's Touch</div>
+        <div class="pre-bar"></div>
+        <div class="pre-tagline">...a touch of excellence</div>
+    </div>
+
+    <!-- CURSOR -->
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
-    <!-- LIGHTBOXES (CSS :target) -->
-    <div class="lightbox" id="lb1">
-        <a class="lightbox-close" href="#!">✕ close</a>
-        <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
-                <path d="M40 10 C40 10 20 26 20 46 C20 58 28 68 40 68 C52 68 60 58 60 46 C60 26 40 10 40 10Z" />
-                <path d="M27 50C29 56 33 61 40 64" />
-                <circle cx="40" cy="46" r="8" />
+    <!-- WHATSAPP BUBBLE -->
+    <a href="https://wa.me/2349038815427" class="wa-bubble" target="_blank" title="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.118 1.526 5.847L0 24l6.335-1.503A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.359-.214-3.727.884.936-3.617-.236-.374A9.818 9.818 0 1112 21.818z" />
+        </svg>
+    </a>
+
+    <!-- LIGHTBOXES -->
+    <div class="lightbox" id="lb1"><a class="lightbox-close" href="#">✕ close</a>
+        <div class="lightbox-inner"><svg class="lightbox-ph-icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                stroke="#C9A84C" stroke-width=".8">
+                <path d="M40 8C40 8 16 24 16 44c0 13 10 24 24 24s24-11 24-24c0-20-24-36-24-36z" />
+                <path d="M26 50c2 6 6 11 14 14" />
+                <circle cx="40" cy="44" r="8" />
             </svg>
             <h2 class="lightbox-title">Grand Wedding at Astro Halls</h2>
             <p class="lightbox-sub">Wedding · Port Harcourt · 2024</p>
         </div>
     </div>
-    <div class="lightbox" id="lb2">
-        <a class="lightbox-close" href="#!">✕ close</a>
-        <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
+    <div class="lightbox" id="lb2"><a class="lightbox-close" href="#">✕ close</a>
+        <div class="lightbox-inner"><svg class="lightbox-ph-icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                stroke="#C9A84C" stroke-width=".8">
                 <rect x="10" y="20" width="60" height="44" rx="3" />
-                <path d="M10 34 L70 34 M26 20 L26 10 M54 20 L54 10" />
+                <path d="M10 34h60M26 20v-8M54 20v-8" />
                 <circle cx="40" cy="50" r="8" />
             </svg>
             <h2 class="lightbox-title">HOT26 Corporate Event</h2>
             <p class="lightbox-sub">Corporate · Astro Halls · 2024</p>
         </div>
     </div>
-    <div class="lightbox" id="lb3">
-        <a class="lightbox-close" href="#!">✕ close</a>
-        <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
-                <path
-                    d="M40 8 L40 16 M34 12 L46 12 M16 40 C16 26 26 14 40 14 C54 14 64 26 64 40 C64 54 54 66 40 66 C26 66 16 54 16 40Z" />
-                <path d="M28 64 L28 72 M52 64 L52 72 M10 72 L70 72" />
+    <div class="lightbox" id="lb3"><a class="lightbox-close" href="#">✕ close</a>
+        <div class="lightbox-inner"><svg class="lightbox-ph-icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                stroke="#C9A84C" stroke-width=".8">
+                <path d="M40 8l40 16-40 16L0 24z" />
+                <path d="M28 64V40M52 64V40" />
+                <path d="M16 64h48" />
             </svg>
             <h2 class="lightbox-title">Candle & Bloom Centrepiece</h2>
             <p class="lightbox-sub">Floral · Private Event · 2024</p>
         </div>
     </div>
-    <div class="lightbox" id="lb4">
-        <a class="lightbox-close" href="#!">✕ close</a>
-        <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
-                <path d="M20 70 C20 70 24 46 40 38 C56 30 60 70 60 70" />
-                <path d="M30 38 C30 24 34 14 40 14 C46 14 50 24 50 38" />
-                <path d="M14 70 L66 70" />
+    <div class="lightbox" id="lb4"><a class="lightbox-close" href="#">✕ close</a>
+        <div class="lightbox-inner"><svg class="lightbox-ph-icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                stroke="#C9A84C" stroke-width=".8">
+                <path d="M20 70c0 0 4-24 20-32s36 32 36 32" />
+                <path d="M30 38c0-14 4-24 10-24s10 10 10 24" />
+                <path d="M12 70h56" />
             </svg>
             <h2 class="lightbox-title">Gold & White Dais Setup</h2>
-            <p class="lightbox-sub">Wedding · Port Harcourt · 2024</p>
+            <p class="lightbox-sub">Wedding · 2024</p>
         </div>
     </div>
-    <div class="lightbox" id="lb5">
-        <a class="lightbox-close" href="#!">✕ close</a>
-        <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
-                <circle cx="40" cy="34" r="20" />
-                <path d="M20 70 C20 58 29 50 40 50 C51 50 60 58 60 70" />
-                <path d="M40 14 L40 54" />
+    <div class="lightbox" id="lb5"><a class="lightbox-close" href="#">✕ close</a>
+        <div class="lightbox-inner"><svg class="lightbox-ph-icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                stroke="#C9A84C" stroke-width=".8">
+                <circle cx="40" cy="32" r="20" />
+                <path d="M16 70c0-13 11-22 24-22s24 9 24 22" />
             </svg>
             <h2 class="lightbox-title">Intimate Dinner Styling</h2>
-            <p class="lightbox-sub">Private · Garden Setting · 2024</p>
+            <p class="lightbox-sub">Private Event · 2024</p>
         </div>
     </div>
-    <div class="lightbox" id="lb6">
-        <a class="lightbox-close" href="#!">✕ close</a>
-        <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
+    <div class="lightbox" id="lb6"><a class="lightbox-close" href="#">✕ close</a>
+        <div class="lightbox-inner"><svg class="lightbox-ph-icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                stroke="#C9A84C" stroke-width=".8">
                 <rect x="16" y="24" width="48" height="36" rx="2" />
-                <path d="M16 36 L64 36 M28 24 L28 60 M52 24 L52 60" />
+                <path d="M16 36h48M28 24v36M52 24v36" />
             </svg>
             <h2 class="lightbox-title">Birthday Luxury Setup</h2>
             <p class="lightbox-sub">Birthday · Port Harcourt · 2025</p>
         </div>
     </div>
-    <div class="lightbox" id="lb7">
-        <a class="lightbox-close" href="#!">✕ close</a>
+    <div class="lightbox" id="lb7"><a class="lightbox-close" href="#">✕ close</a>
         <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
-                <path d="M40 8 C40 8 16 22 16 44 C16 58 26 70 40 70 C54 70 64 58 64 44 C64 22 40 8 40 8Z" />
-                <path d="M40 8 L40 70 M16 44 L64 44" />
-            </svg>
             <h2 class="lightbox-title">Floral Arch Installation</h2>
             <p class="lightbox-sub">Wedding · PH Events Centre · 2025</p>
         </div>
     </div>
-    <div class="lightbox" id="lb8">
-        <a class="lightbox-close" href="#!">✕ close</a>
+    <div class="lightbox" id="lb8"><a class="lightbox-close" href="#">✕ close</a>
         <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
-                <path d="M20 60 L20 30 L40 14 L60 30 L60 60" />
-                <rect x="30" y="42" width="20" height="18" />
-            </svg>
             <h2 class="lightbox-title">Full Venue Takeover</h2>
             <p class="lightbox-sub">Wedding · Astro Halls · 2025</p>
         </div>
     </div>
-    <div class="lightbox" id="lb9">
-        <a class="lightbox-close" href="#!">✕ close</a>
+    <div class="lightbox" id="lb9"><a class="lightbox-close" href="#">✕ close</a>
         <div class="lightbox-inner">
-            <svg class="lightbox-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#C9A84C"
-                stroke-width=".8">
-                <ellipse cx="40" cy="40" rx="30" ry="20" />
-                <path d="M10 40 C10 52 24 62 40 62 C56 62 70 52 70 40" />
-                <path d="M40 20 L40 62 M10 40 L70 40" />
-            </svg>
             <h2 class="lightbox-title">Black-Tie Gala Evening</h2>
             <p class="lightbox-sub">Gala · Port Harcourt · 2025</p>
         </div>
@@ -136,15 +123,22 @@
         <a href="#hero" class="nav-logo">Joe's Touch</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Work</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#founder">Founder</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Book Now</a></li>
         </ul>
     </nav>
 
     <!-- HERO -->
     <section id="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-video-wrap">
+            <div class="hero-video-placeholder">
+                <div class="video-placeholder-label">📹 Replace with cinematic video or full-screen photo</div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
         <svg class="filigree-top" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMin slice">
             <defs>
@@ -154,89 +148,82 @@
                 </radialGradient>
             </defs>
             <g fill="none" stroke="url(#fg)" stroke-width="1">
-                <path d="M720,0 C720,0 720,60 720,80" />
-                <path d="M720,40 C700,40 660,30 620,50 C580,70 560,100 540,110" />
-                <path d="M720,40 C700,40 660,20 600,25 C560,28 520,50 490,60" />
-                <path d="M720,40 C740,40 780,30 820,50 C860,70 880,100 900,110" />
-                <path d="M720,40 C740,40 780,20 840,25 C880,28 920,50 950,60" />
-                <path d="M490,60 C460,65 420,70 380,90 C350,105 330,120 310,130" />
-                <path d="M540,110 C510,120 480,130 450,150 C430,165 410,170 390,165" />
-                <path d="M950,60 C980,65 1020,70 1060,90 C1090,105 1110,120 1130,130" />
-                <path d="M900,110 C930,120 960,130 990,150 C1010,165 1030,170 1050,165" />
-                <path d="M620,50 C610,40 600,25 615,15 C625,8 635,18 620,50" />
-                <path d="M560,100 C545,90 535,75 548,65 C558,57 568,70 560,100" />
-                <path d="M380,90 C368,78 360,62 375,54 C386,48 394,62 380,90" />
-                <path d="M450,150 C438,140 432,125 445,118 C455,112 462,126 450,150" />
-                <path d="M820,50 C830,40 840,25 825,15 C815,8 805,18 820,50" />
-                <path d="M880,100 C895,90 905,75 892,65 C882,57 872,70 880,100" />
-                <path d="M1060,90 C1072,78 1080,62 1065,54 C1054,48 1046,62 1060,90" />
-                <path d="M990,150 C1002,140 1008,125 995,118 C985,112 978,126 990,150" />
-                <path d="M600,25 C592,15 592,5 600,2 C608,0 612,10 600,25" />
-                <path d="M840,25 C848,15 848,5 840,2 C832,0 828,10 840,25" />
-                <path d="M310,130 C298,122 295,110 305,105 C313,100 318,112 310,130" />
-                <path d="M1130,130 C1142,122 1145,110 1135,105 C1127,100 1122,112 1130,130" />
-                <path d="M720,80 C710,70 700,55 715,48 C725,43 730,55 720,80" />
-                <path d="M720,80 C730,70 740,55 725,48 C715,43 710,55 720,80" />
+                <path d="M720,0C720,0 720,60 720,80" />
+                <path d="M720,40C700,40 660,30 620,50C580,70 560,100 540,110" />
+                <path d="M720,40C700,40 660,20 600,25C560,28 520,50 490,60" />
+                <path d="M720,40C740,40 780,30 820,50C860,70 880,100 900,110" />
+                <path d="M720,40C740,40 780,20 840,25C880,28 920,50 950,60" />
+                <path d="M490,60C460,65 420,70 380,90C350,105 330,120 310,130" />
+                <path d="M540,110C510,120 480,130 450,150C430,165 410,170 390,165" />
+                <path d="M950,60C980,65 1020,70 1060,90C1090,105 1110,120 1130,130" />
+                <path d="M900,110C930,120 960,130 990,150C1010,165 1030,170 1050,165" />
+                <path d="M620,50C610,40 600,25 615,15C625,8 635,18 620,50" />
+                <path d="M820,50C830,40 840,25 825,15C815,8 805,18 820,50" />
+                <path d="M380,90C368,78 360,62 375,54C386,48 394,62 380,90" />
+                <path d="M1060,90C1072,78 1080,62 1065,54C1054,48 1046,62 1060,90" />
+                <path d="M720,80C710,70 700,55 715,48C725,43 730,55 720,80" />
+                <path d="M720,80C730,70 740,55 725,48C715,43 710,55 720,80" />
                 <circle cx="720" cy="3" r="3" fill="#C9A84C" opacity=".6" />
                 <circle cx="600" cy="2" r="2" fill="#C9A84C" opacity=".4" />
                 <circle cx="840" cy="2" r="2" fill="#C9A84C" opacity=".4" />
-                <circle cx="490" cy="58" r="2" fill="#C9A84C" opacity=".3" />
-                <circle cx="950" cy="58" r="2" fill="#C9A84C" opacity=".3" />
             </g>
         </svg>
         <div class="hero-content">
             <p class="hero-eyebrow">Port Harcourt · Nigeria</p>
-            <svg class="hero-logo-icon" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="ig" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#E8C96A" />
-                        <stop offset="100%" stop-color="#8B6E2A" />
-                    </linearGradient>
-                </defs>
-                <rect x="2" y="2" width="76" height="76" rx="18" fill="url(#ig)" />
-                <circle cx="40" cy="40" r="26" fill="#080808" />
-                <g fill="#C9A84C">
-                    <rect x="37" y="20" width="6" height="22" rx="3" />
-                    <rect x="44" y="26" width="5.5" height="18" rx="2.5" />
-                    <rect x="30.5" y="26" width="5.5" height="18" rx="2.5" />
-                    <rect x="30" y="36" width="20" height="12" rx="2" />
-                    <circle cx="40" cy="19" r="2.5" fill="#E8C96A" />
-                </g>
-            </svg>
             <h1 class="hero-title">Joe's<br><em>Touch</em></h1>
             <p class="hero-tagline">...a touch of excellence</p>
-            <div class="hero-cta">
-                <a href="#contact" class="btn-gold"><span>Book Your Event</span></a>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-gold"><span>Book a Consultation</span></a>
+                <a href="#gallery" class="btn-ghost">View Portfolio</a>
             </div>
         </div>
-        <div class="hero-scroll">
-            <span>Scroll</span>
+        <div class="hero-scroll"><span>Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </section>
 
+    <!-- SOCIAL PROOF -->
+    <div class="proof-strip reveal">
+        <div class="proof-item">
+            <div class="proof-num">126+</div>
+            <div class="proof-label">Events Styled</div>
+        </div>
+        <div class="proof-item">
+            <div class="proof-num">98%</div>
+            <div class="proof-label">Client Satisfaction</div>
+        </div>
+        <div class="proof-item">
+            <div class="proof-num">5★</div>
+            <div class="proof-label">Average Rating</div>
+        </div>
+        <div class="proof-item">
+            <div class="proof-num">PH</div>
+            <div class="proof-label">Port Harcourt Based</div>
+        </div>
+    </div>
+
     <!-- MARQUEE -->
     <div class="marquee-wrap">
         <div class="marquee-track">
-            <span class="marquee-item">Luxury Weddings <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Event Styling <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Venue Decoration <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Floral Design <span class="marquee-dot"></span></span>
-            <span class="marquee-item">A Touch of Excellence <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Port Harcourt's Finest <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Luxury Weddings <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Event Styling <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Venue Decoration <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Floral Design <span class="marquee-dot"></span></span>
-            <span class="marquee-item">A Touch of Excellence <span class="marquee-dot"></span></span>
-            <span class="marquee-item">Port Harcourt's Finest <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Luxury Weddings<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Event Styling<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Venue Decoration<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Floral Design<span class="marquee-dot"></span></span>
+            <span class="marquee-item">A Touch of Excellence<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Port Harcourt's Finest<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Luxury Weddings<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Event Styling<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Venue Decoration<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Floral Design<span class="marquee-dot"></span></span>
+            <span class="marquee-item">A Touch of Excellence<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Port Harcourt's Finest<span class="marquee-dot"></span></span>
         </div>
     </div>
 
     <!-- ABOUT -->
     <section id="about">
         <div class="about-inner">
-            <div class="about-left reveal">
+            <div class="reveal">
                 <p class="section-eyebrow">The Vision</p>
                 <h2 class="section-title">Where vision<br>becomes <em>breathtaking</em><br>reality</h2>
                 <p class="section-body">Joe's Touch is Port Harcourt's premier luxury event decoration studio — built on
@@ -244,21 +231,19 @@
                 <p class="section-body">Founded by Joseph Paul, the brand has become synonymous with elegance,
                     precision, and cinematic styling across the city's most prestigious venues. From the grand halls of
                     Astro Halls to intimate settings transformed overnight — every space is a canvas.</p>
-                <p class="section-body">The gold. The candlelight. The perfectly dressed dais. That is the Joe's Touch
-                    signature.</p>
             </div>
-            <div class="about-right reveal">
+            <div class="reveal">
                 <div class="about-frame">
                     <div class="about-frame-inner">
-                        <svg class="about-frame-icon" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="70" height="70" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" opacity=".5">
                             <defs>
                                 <linearGradient id="aig" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#E8C96A" />
                                     <stop offset="100%" stop-color="#8B6E2A" />
                                 </linearGradient>
                             </defs>
-                            <rect x="2" y="2" width="76" height="76" rx="18" fill="url(#aig)" opacity=".3" />
-                            <circle cx="40" cy="40" r="26" fill="rgba(8,8,8,.5)" />
+                            <rect x="2" y="2" width="76" height="76" rx="18" fill="url(#aig)" opacity=".4" />
+                            <circle cx="40" cy="40" r="26" fill="rgba(8,8,8,.6)" />
                             <g fill="#C9A84C">
                                 <rect x="37" y="20" width="6" height="22" rx="3" />
                                 <rect x="44" y="26" width="5.5" height="18" rx="2.5" />
@@ -274,7 +259,6 @@
         </div>
     </section>
 
-    <!-- STATS -->
     <div class="stats-strip">
         <div class="stats-inner">
             <div class="stat-item reveal">
@@ -283,7 +267,7 @@
             </div>
             <div class="stat-item reveal">
                 <div class="stat-number">919+</div>
-                <div class="stat-label">Happy Clients & Followers</div>
+                <div class="stat-label">Happy Clients</div>
             </div>
             <div class="stat-item reveal">
                 <div class="stat-number">1</div>
@@ -292,55 +276,251 @@
         </div>
     </div>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <div class="services-inner">
-            <div class="services-header reveal">
-                <p class="section-eyebrow">What We Do</p>
-                <h2 class="section-title" style="text-align:center;">The Art of<br><em>Exceptional Events</em></h2>
-                <div class="section-line"></div>
+    <!-- FEATURED PROJECTS -->
+    <section id="projects">
+        <div class="projects-inner">
+            <div class="projects-header reveal">
+                <p class="section-eyebrow">Featured Work</p>
+                <h2 class="section-title">Stories behind<br>the <em>transformation</em></h2>
             </div>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-num">01</div>
-                    <svg class="service-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
-                        <path
-                            d="M18 3 L18 8 M14 5 L22 5 M8 18 C8 12 12 7 18 7 C24 7 28 12 28 18 C28 24 24 29 18 29 C12 29 8 24 8 18Z" />
-                        <path d="M12 28 L12 33 M24 28 L24 33 M6 33 L30 33" />
-                        <circle cx="18" cy="18" r="4" />
-                    </svg>
-                    <h3 class="service-title">Luxury Wedding Decoration</h3>
-                    <p class="service-desc">Full venue transformation for your most important day. Floral installations,
-                        lighting design, dais styling, and every detail handled with intention and precision.</p>
+
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="project-img-ph">
+                            <svg class="ph-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#C9A84C"
+                                stroke-width=".8">
+                                <path d="M30 8C30 8 12 20 12 34c0 10 8 18 18 18s18-8 18-18c0-14-18-26-18-26z" />
+                                <circle cx="30" cy="34" r="7" />
+                            </svg>
+                            <span class="ph-label">Wedding at Astro Halls</span>
+                            <span class="ph-note">📸 Add photo here</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-type">Luxury Wedding</p>
+                        <h3 class="project-title">Hamida &<br>Oluwatosin</h3>
+                        <p class="project-venue">Astro Halls · Port Harcourt · 2024</p>
+                        <p class="project-story">A vision of timeless gold and ivory — the couple wanted drama without
+                            excess. Every candle placed with intention, every floral stem chosen to echo the bride's
+                            bouquet. The dais became a destination.</p>
+                        <span class="project-tag">View Full Story →</span>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-num">02</div>
-                    <svg class="service-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
-                        <rect x="4" y="8" width="28" height="22" rx="2" />
-                        <path d="M4 14 L32 14 M12 8 L12 4 M24 8 L24 4" />
-                        <circle cx="18" cy="22" r="3" />
-                        <path d="M14 22 L10 22 M22 22 L26 22" />
-                    </svg>
-                    <h3 class="service-title">Event Styling & Setup</h3>
-                    <p class="service-desc">Corporate events, social gatherings, birthday celebrations, and intimate
-                        dinners — each styled with the same commitment to elegance that defines Joe's Touch.</p>
+
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="project-img-ph">
+                            <svg class="ph-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#C9A84C"
+                                stroke-width=".8">
+                                <rect x="8" y="16" width="44" height="30" rx="2" />
+                                <path d="M8 26h44M20 16v-6M40 16v-6" />
+                                <circle cx="30" cy="36" r="6" />
+                            </svg>
+                            <span class="ph-label">HOT26 Corporate Event</span>
+                            <span class="ph-note">📸 Add photo here</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-type">Corporate Event</p>
+                        <h3 class="project-title">HOT26<br>Gala Night</h3>
+                        <p class="project-venue">Astro Halls · Port Harcourt · 2024</p>
+                        <p class="project-story">Port Harcourt's most talked-about corporate night needed a backdrop
+                            worthy of the room. Joe's Touch delivered a full venue transformation — moody, cinematic,
+                            black and gold. Guests forgot they were at a work event.</p>
+                        <span class="project-tag">View Full Story →</span>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-num">03</div>
-                    <svg class="service-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
-                        <path d="M18 4 C18 4 8 12 8 20 C8 26 12 31 18 31 C24 31 28 26 28 20 C28 12 18 4 18 4Z" />
-                        <path d="M12 22 C13 25 15 27 18 28" />
-                        <path d="M18 4 L18 28" />
-                    </svg>
-                    <h3 class="service-title">Floral & Centrepiece Design</h3>
-                    <p class="service-desc">Bespoke floral arrangements, candle installations, and centrepieces designed
-                        to complement your venue and create the atmosphere your event demands.</p>
+
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="project-img-ph">
+                            <svg class="ph-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#C9A84C"
+                                stroke-width=".8">
+                                <path d="M30 6l30 12-30 12L0 18z" />
+                                <path d="M20 46V30M40 46V30" />
+                                <path d="M10 46h40" />
+                            </svg>
+                            <span class="ph-label">Floral Installation</span>
+                            <span class="ph-note">📸 Add photo here</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-type">Floral & Centrepiece</p>
+                        <h3 class="project-title">The Candle<br>& Bloom Project</h3>
+                        <p class="project-venue">Private Venue · Port Harcourt · 2024</p>
+                        <p class="project-story">An intimate dinner for forty that felt like a scene from a film. Pillar
+                            candles in varying heights, cascading blooms in deep burgundy and white — the table became
+                            the art. Guests couldn't put their phones down.</p>
+                        <span class="project-tag">View Full Story →</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="gold-rule"></div>
+
+    <!-- BEFORE / AFTER -->
+    <section id="beforeafter">
+        <div class="ba-inner">
+            <div class="ba-header reveal">
+                <p class="section-eyebrow">The Transformation</p>
+                <h2 class="section-title" style="text-align:center;">Every masterpiece begins<br>with an <em>empty
+                        space</em></h2>
+                <div class="section-line"></div>
+                <p style="text-align:center;font-size:.8rem;color:var(--cream-dim);letter-spacing:.1em;">Drag the slider
+                    to reveal the transformation</p>
+            </div>
+            <div class="ba-wrap reveal" id="baWrap">
+                <div class="ba-before">
+                    <div class="ba-ph-content">
+                        <svg class="ba-ph-icon" width="70" height="70" viewBox="0 0 70 70" fill="none" stroke="#C9A84C"
+                            stroke-width=".7">
+                            <rect x="8" y="8" width="54" height="54" rx="2" />
+                            <path d="M8 8l54 54M8 62L62 8" />
+                        </svg>
+                        <p class="ba-ph-text">Empty Hall</p>
+                        <p class="ba-ph-note">📸 Add before photo</p>
+                    </div>
+                    <span class="ba-label before">Before</span>
+                </div>
+                <div class="ba-after" id="baAfter">
+                    <div class="ba-ph-content">
+                        <svg class="ba-ph-icon" width="70" height="70" viewBox="0 0 70 70" fill="none" stroke="#C9A84C"
+                            stroke-width=".7">
+                            <path d="M35 8C35 8 14 22 14 40c0 12 9 22 21 22s21-10 21-22c0-18-21-32-21-32z" />
+                            <circle cx="35" cy="40" r="8" />
+                            <path d="M23 46c2 5 6 9 12 11" />
+                        </svg>
+                        <p class="ba-ph-text">After Joe's Touch</p>
+                        <p class="ba-ph-note">📸 Add after photo</p>
+                    </div>
+                    <span class="ba-label after">After</span>
+                </div>
+                <div class="ba-divider" id="baDivider">
+                    <div class="ba-handle" id="baHandle">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M7 4l-4 6 4 6M13 4l4 6-4 6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="ba-caption reveal">
+                <p class="ba-caption-title">"We don't decorate venues — we <em
+                        style="font-style:italic;color:var(--gold);">create experiences</em>"</p>
+                <p class="ba-caption-sub" style="margin-top:.75rem;">— Joseph Paul, Founder · Joe's Touch</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY JOE'S TOUCH -->
+    <section id="why">
+        <div class="why-inner">
+            <div class="reveal">
+                <p class="section-eyebrow">Why Choose Us</p>
+                <h2 class="section-title">Not just decoration.<br><em>An experience.</em></h2>
+                <p class="section-body">Every client deserves more than a set-up. They deserve a partner who cares as
+                    much about their day as they do.</p>
+                <ul class="why-list">
+                    <li class="why-item">
+                        <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <div>
+                            <div class="why-item-title">Bespoke Designs</div>
+                            <div class="why-item-desc">No two events look alike. Every setup starts with your vision,
+                                not a template.</div>
+                        </div>
+                    </li>
+                    <li class="why-item">
+                        <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <div>
+                            <div class="why-item-title">Premium-Quality Materials</div>
+                            <div class="why-item-desc">Only the finest florals, fabrics, candles, and fixtures — the
+                                difference shows.</div>
+                        </div>
+                    </li>
+                    <li class="why-item">
+                        <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <div>
+                            <div class="why-item-title">Stress-Free Execution</div>
+                            <div class="why-item-desc">You show up. We handle everything. Setup, styling, and breakdown
+                                — all taken care of.</div>
+                        </div>
+                    </li>
+                    <li class="why-item">
+                        <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <div>
+                            <div class="why-item-title">Attention to Every Detail</div>
+                            <div class="why-item-desc">The candles at equal height. The flowers pressed perfectly. The
+                                dais immaculate. That's the Joe's Touch standard.</div>
+                        </div>
+                    </li>
+                    <li class="why-item">
+                        <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <div>
+                            <div class="why-item-title">On-Time, Every Time</div>
+                            <div class="why-item-desc">Your event starts at your hour. We make sure the space is ready
+                                long before guests arrive.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <div class="why-quote">
+                    <p class="why-quote-text">"Joe's Touch transformed our venue into something beyond what we imagined.
+                        Every candle, every bloom, every detail was exactly right. Port Harcourt's finest, without
+                        question."</p>
+                    <p class="why-quote-author">— Adaeze & Chukwuemeka · Wedding Client · 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section id="founder">
+        <div class="founder-inner">
+            <div class="reveal">
+                <div class="founder-photo">
+                    <div class="founder-photo-ph">
+                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" stroke="#C9A84C" stroke-width=".8"
+                            opacity=".3">
+                            <circle cx="35" cy="26" r="16" />
+                            <path d="M10 66c0-14 11-24 25-24s25 10 25 24" />
+                        </svg>
+                        <p class="founder-name">Joseph Paul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <p class="section-eyebrow">Meet the Founder</p>
+                <h2 class="founder-bio-title">I'm Joseph,<br>and I believe every event<br>deserves to be
+                    <em>unforgettable</em>
+                </h2>
+                <p class="section-body">Every event I design reflects excellence, creativity, and obsessive attention to
+                    detail. I don't just decorate venues — I create experiences people remember long after the music
+                    stops.</p>
+                <p class="section-body">Based in Port Harcourt, I've worked across the city's finest venues — from
+                    intimate dinners for forty to grand weddings for hundreds. The brief is always the same: make it
+                    breathtaking.</p>
+                <p class="section-body">If you're ready to stop imagining your perfect event and start planning it, I'd
+                    love to hear your vision.</p>
+                <div style="margin-top:2.5rem;">
+                    <a href="#contact" class="btn-gold"><span>Let's Talk →</span></a>
+                </div>
+                <p class="founder-sig">Joseph Paul</p>
+            </div>
+        </div>
+    </section>
 
     <!-- GALLERY -->
     <section id="gallery">
@@ -357,163 +537,121 @@
                     <button class="filter-btn" data-filter="floral">Floral</button>
                 </div>
             </div>
-
-            <div class="gallery-track" id="galleryTrack">
-
-                <a class="gallery-item" href="#lb1" data-cat="wedding" style="view-transition-name:gi1">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                            stroke="currentColor" stroke-width=".8">
-                            <path d="M32 8 C32 8 14 20 14 36 C14 46 22 56 32 56 C42 56 50 46 50 36 C50 20 32 8 32 8Z" />
-                            <path d="M20 40 C22 46 26 51 32 53" />
-                            <circle cx="32" cy="36" r="7" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Grand Wedding<br>Astro Halls</span>
-                    </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <a class="gallery-item" href="#lb1" data-cat="wedding">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="60" height="60" viewBox="0 0 60 60"
+                            fill="none" stroke="currentColor" stroke-width=".8">
+                            <path d="M30 6C30 6 14 18 14 32c0 10 7 18 16 18s16-8 16-18C46 18 30 6 30 6z" />
+                            <circle cx="30" cy="32" r="6" />
+                        </svg><span class="gallery-ph-label">Grand Wedding · Astro Halls</span><span
+                            class="gallery-add-note">📸 Add photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Grand Wedding at Astro Halls</div>
                         <div class="gallery-overlay-sub">Wedding · 2024</div>
-                    </div>
-                    <span class="gallery-tag">Wedding</span>
+                    </div><span class="gallery-tag">Wedding</span>
                 </a>
-
-                <a class="gallery-item" href="#lb2" data-cat="corporate" style="view-transition-name:gi2">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                            stroke="currentColor" stroke-width=".8">
+                <a class="gallery-item" href="#lb2" data-cat="corporate">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="46" height="46" viewBox="0 0 50 50"
+                            fill="none" stroke="currentColor" stroke-width=".8">
                             <rect x="8" y="14" width="34" height="26" rx="2" />
-                            <path d="M8 20 L42 20 M18 14 L18 8 M32 14 L32 8" />
-                            <circle cx="25" cy="31" r="5" />
-                        </svg>
-                        <span class="gallery-placeholder-label">HOT26<br>Corporate Event</span>
-                    </div>
+                            <path d="M8 20h34M18 14V8M32 14V8" />
+                        </svg><span class="gallery-ph-label">HOT26 Corporate Event</span><span
+                            class="gallery-add-note">📸 Add photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">HOT26 Corporate Event</div>
                         <div class="gallery-overlay-sub">Corporate · 2024</div>
-                    </div>
-                    <span class="gallery-tag">Corporate</span>
+                    </div><span class="gallery-tag">Corporate</span>
                 </a>
-
-                <a class="gallery-item" href="#lb3" data-cat="floral" style="view-transition-name:gi3">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                            stroke="currentColor" stroke-width=".8">
-                            <path
-                                d="M25 6 L25 10 M21 8 L29 8 M11 25 C11 17 17 9 25 9 C33 9 39 17 39 25 C39 33 33 41 25 41 C17 41 11 33 11 25Z" />
-                            <path d="M18 40 L18 46 M32 40 L32 46 M6 46 L44 46" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Candle &<br>Bloom Centrepiece</span>
-                    </div>
+                <a class="gallery-item" href="#lb3" data-cat="floral">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="46" height="46" viewBox="0 0 50 50"
+                            fill="none" stroke="currentColor" stroke-width=".8">
+                            <path d="M25 6l25 10-25 10L0 16z" />
+                            <path d="M16 40V26M34 40V26" />
+                            <path d="M8 40h34" />
+                        </svg><span class="gallery-ph-label">Candle & Bloom</span><span class="gallery-add-note">📸 Add
+                            photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Candle & Bloom Centrepiece</div>
                         <div class="gallery-overlay-sub">Floral · 2024</div>
-                    </div>
-                    <span class="gallery-tag">Floral</span>
+                    </div><span class="gallery-tag">Floral</span>
                 </a>
-
-                <a class="gallery-item" href="#lb4" data-cat="wedding" style="view-transition-name:gi4">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                            stroke="currentColor" stroke-width=".8">
-                            <path d="M14 44 C14 44 17 30 25 26 C33 22 36 44 36 44" />
-                            <path d="M19 26 C19 18 21 10 25 10 C29 10 31 18 31 26" />
-                            <path d="M8 44 L42 44" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Gold & White<br>Dais Setup</span>
-                    </div>
+                <a class="gallery-item" href="#lb4" data-cat="wedding">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="46" height="46" viewBox="0 0 50 50"
+                            fill="none" stroke="currentColor" stroke-width=".8">
+                            <path d="M14 44c0 0 4-20 11-24s21 24 21 24" />
+                            <path d="M19 20c0-10 3-16 6-16s6 6 6 16" />
+                            <path d="M8 44h34" />
+                        </svg><span class="gallery-ph-label">Gold & White Dais</span><span class="gallery-add-note">📸
+                            Add photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Gold & White Dais Setup</div>
                         <div class="gallery-overlay-sub">Wedding · 2024</div>
-                    </div>
-                    <span class="gallery-tag">Wedding</span>
+                    </div><span class="gallery-tag">Wedding</span>
                 </a>
-
-                <a class="gallery-item" href="#lb5" data-cat="floral" style="view-transition-name:gi5">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                            stroke="currentColor" stroke-width=".8">
-                            <circle cx="32" cy="26" r="16" />
-                            <path d="M16 54 C16 44 23 37 32 37 C41 37 48 44 48 54" />
-                            <path d="M32 10 L32 42" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Intimate Dinner<br>Styling</span>
-                    </div>
+                <a class="gallery-item" href="#lb5" data-cat="floral">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="60" height="60" viewBox="0 0 60 60"
+                            fill="none" stroke="currentColor" stroke-width=".8">
+                            <circle cx="30" cy="22" r="14" />
+                            <path d="M14 52c0-10 7-18 16-18s16 8 16 18" />
+                            <path d="M30 8v44" />
+                        </svg><span class="gallery-ph-label">Intimate Dinner Styling</span><span
+                            class="gallery-add-note">📸 Add photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Intimate Dinner Styling</div>
-                        <div class="gallery-overlay-sub">Private Event · 2024</div>
-                    </div>
-                    <span class="gallery-tag">Event</span>
+                        <div class="gallery-overlay-sub">Private · 2024</div>
+                    </div><span class="gallery-tag">Event</span>
                 </a>
-
-                <a class="gallery-item" href="#lb6" data-cat="corporate" style="view-transition-name:gi6">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                            stroke="currentColor" stroke-width=".8">
+                <a class="gallery-item" href="#lb6" data-cat="corporate">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="46" height="46" viewBox="0 0 50 50"
+                            fill="none" stroke="currentColor" stroke-width=".8">
                             <rect x="10" y="16" width="30" height="22" rx="1" />
-                            <path d="M10 22 L40 22 M18 16 L18 38 M32 16 L32 38" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Birthday<br>Luxury Setup</span>
-                    </div>
+                            <path d="M10 22h30M18 16v22M32 16v22" />
+                        </svg><span class="gallery-ph-label">Birthday Luxury Setup</span><span
+                            class="gallery-add-note">📸 Add photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Birthday Luxury Setup</div>
                         <div class="gallery-overlay-sub">Birthday · 2025</div>
-                    </div>
-                    <span class="gallery-tag">Event</span>
+                    </div><span class="gallery-tag">Event</span>
                 </a>
-
-                <a class="gallery-item" href="#lb7" data-cat="floral" style="view-transition-name:gi7">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                            stroke="currentColor" stroke-width=".8">
-                            <path d="M25 6 C25 6 10 16 10 30 C10 40 16 46 25 46 C34 46 40 40 40 30 C40 16 25 6 25 6Z" />
-                            <path d="M25 6 L25 46 M10 30 L40 30" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Floral Arch<br>Installation</span>
-                    </div>
+                <a class="gallery-item" href="#lb7" data-cat="floral">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="46" height="46" viewBox="0 0 50 50"
+                            fill="none" stroke="currentColor" stroke-width=".8">
+                            <path d="M25 6C25 6 10 16 10 28c0 10 6 16 15 16s15-6 15-16C40 16 25 6 25 6z" />
+                            <path d="M25 6v38M10 28h30" />
+                        </svg><span class="gallery-ph-label">Floral Arch</span><span class="gallery-add-note">📸 Add
+                            photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Floral Arch Installation</div>
                         <div class="gallery-overlay-sub">Wedding · 2025</div>
-                    </div>
-                    <span class="gallery-tag">Floral</span>
+                    </div><span class="gallery-tag">Floral</span>
                 </a>
-
-                <a class="gallery-item" href="#lb8" data-cat="wedding" style="view-transition-name:gi8">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                            stroke="currentColor" stroke-width=".8">
-                            <path d="M14 42 L14 24 L25 10 L36 24 L36 42" />
+                <a class="gallery-item" href="#lb8" data-cat="wedding">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="46" height="46" viewBox="0 0 50 50"
+                            fill="none" stroke="currentColor" stroke-width=".8">
+                            <path d="M12 42l0-18L25 10l13 14v18" />
                             <rect x="19" y="30" width="12" height="12" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Full Venue<br>Takeover</span>
-                    </div>
+                        </svg><span class="gallery-ph-label">Full Venue Takeover</span><span class="gallery-add-note">📸
+                            Add photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Full Venue Takeover</div>
                         <div class="gallery-overlay-sub">Wedding · 2025</div>
-                    </div>
-                    <span class="gallery-tag">Wedding</span>
+                    </div><span class="gallery-tag">Wedding</span>
                 </a>
-
-                <a class="gallery-item" href="#lb9" data-cat="corporate" style="view-transition-name:gi9">
-                    <div class="gallery-item-bg">
-                        <svg class="gallery-placeholder-icon" width="80" height="40" viewBox="0 0 80 40" fill="none"
-                            stroke="currentColor" stroke-width=".8">
+                <a class="gallery-item" href="#lb9" data-cat="corporate">
+                    <div class="gallery-item-bg"><svg class="gallery-ph-icon" width="80" height="40" viewBox="0 0 80 40"
+                            fill="none" stroke="currentColor" stroke-width=".8">
                             <ellipse cx="40" cy="20" rx="34" ry="14" />
-                            <path d="M6 20 C6 28 22 34 40 34 C58 34 74 28 74 20" />
-                            <path d="M40 6 L40 34 M6 20 L74 20" />
-                        </svg>
-                        <span class="gallery-placeholder-label">Black-Tie Gala Evening · Astro Halls · Port
-                            Harcourt</span>
-                    </div>
+                            <path d="M6 20c0 8 15 14 34 14s34-6 34-14" />
+                            <path d="M40 6v28M6 20h68" />
+                        </svg><span class="gallery-ph-label">Black-Tie Gala Evening · Astro Halls · Port Harcourt ·
+                            2025</span><span class="gallery-add-note">📸 Add photo</span></div>
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-title">Black-Tie Gala Evening</div>
                         <div class="gallery-overlay-sub">Gala · Port Harcourt · 2025</div>
-                    </div>
-                    <span class="gallery-tag">Corporate</span>
+                    </div><span class="gallery-tag">Corporate</span>
                 </a>
-
-            </div><!-- /gallery-track -->
-
-            <div style="text-align:center; margin-top:4rem;" class="reveal">
+            </div>
+            <div style="text-align:center;margin-top:4rem;" class="reveal">
                 <a href="#contact" class="btn-gold"><span>Book a Consultation →</span></a>
             </div>
         </div>
@@ -523,64 +661,55 @@
 
     <!-- TESTIMONIALS -->
     <section id="testimonials">
-        <div class="testimonials-inner">
+        <div class="testi-inner">
             <div class="testi-header reveal">
                 <p class="section-eyebrow">Client Stories</p>
                 <h2 class="section-title" style="text-align:center;">Words from<br><em>our clients</em></h2>
                 <div class="section-line"></div>
             </div>
-
-            <div class="testi-track-wrap reveal">
+            <div class="reveal">
                 <div class="testi-track" id="testiTrack">
-
                     <div class="testi-slide">
-                        <span class="testi-quote-mark">"</span>
+                        <div class="testi-stars">★★★★★</div><span class="testi-quote-mark">"</span>
                         <p class="testi-text">Joe's Touch transformed our venue into something beyond what we imagined.
                             Every candle, every bloom, every detail was exactly right. Port Harcourt's finest, without
                             question.</p>
                         <p class="testi-author">— Adaeze & Chukwuemeka</p>
                         <p class="testi-event">Grand Wedding · Astro Halls · 2024</p>
                     </div>
-
                     <div class="testi-slide">
-                        <span class="testi-quote-mark">"</span>
+                        <div class="testi-stars">★★★★★</div><span class="testi-quote-mark">"</span>
                         <p class="testi-text">We handed Joseph a concept on a piece of paper. What he delivered on the
                             day made us cry. The dais, the florals, the lighting — it was cinema. Pure cinema.</p>
                         <p class="testi-author">— Blessing & Emeka Okafor</p>
                         <p class="testi-event">White Wedding · PH Events Centre · 2024</p>
                     </div>
-
                     <div class="testi-slide">
-                        <span class="testi-quote-mark">"</span>
+                        <div class="testi-stars">★★★★★</div><span class="testi-quote-mark">"</span>
                         <p class="testi-text">For HOT26 we needed someone who understood luxury without being told
                             twice. Joe's Touch delivered that and more. Every guest kept asking who did the decor.</p>
                         <p class="testi-author">— HOT26 Event Committee</p>
                         <p class="testi-event">Corporate Event · Port Harcourt · 2024</p>
                     </div>
-
                     <div class="testi-slide">
-                        <span class="testi-quote-mark">"</span>
+                        <div class="testi-stars">★★★★★</div><span class="testi-quote-mark">"</span>
                         <p class="testi-text">I've worked with decorators across the south-south and nobody touches
                             Joseph's eye for detail. He doesn't just decorate — he creates an atmosphere. Book him
                             before he gets fully booked.</p>
                         <p class="testi-author">— Tonia Raphael</p>
                         <p class="testi-event">Birthday Celebration · Port Harcourt · 2025</p>
                     </div>
-
                     <div class="testi-slide">
-                        <span class="testi-quote-mark">"</span>
+                        <div class="testi-stars">★★★★★</div><span class="testi-quote-mark">"</span>
                         <p class="testi-text">The centrepieces alone had our guests taking photos for hours. That gold
-                            and candlelight combination he created was absolutely breathtaking. We will be back.</p>
+                            and candlelight combination was absolutely breathtaking. We will be back.</p>
                         <p class="testi-author">— Miracle & David Chuku</p>
                         <p class="testi-event">Intimate Dinner · Private Venue · 2025</p>
                     </div>
-
                 </div>
-
                 <div class="testi-progress">
                     <div class="testi-progress-fill" id="testiProgress"></div>
                 </div>
-
                 <div class="testi-dots" id="testiDots">
                     <button class="testi-dot active" data-idx="0"></button>
                     <button class="testi-dot" data-idx="1"></button>
@@ -592,26 +721,166 @@
         </div>
     </section>
 
+    <!-- INSTAGRAM -->
+    <section id="instagram">
+        <div class="insta-inner">
+            <div class="insta-header reveal">
+                <p class="section-eyebrow">Follow Along</p>
+                <h2 class="section-title" style="text-align:center;">Latest Work on<br><em>Instagram</em></h2>
+                <p class="insta-handle">@joestouch_</p>
+            </div>
+            <div class="insta-grid reveal">
+                <!-- 6 placeholder tiles -->
+                <div class="insta-item">
+                    <div class="insta-item-inner"><svg class="insta-ph-icon" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none" stroke="#C9A84C" stroke-width=".8">
+                            <circle cx="16" cy="16" r="12" />
+                            <circle cx="16" cy="16" r="5" />
+                        </svg><span class="insta-ph-num">Post 1</span></div>
+                    <div class="insta-item-overlay"><span class="insta-overlay-icon">♥</span></div>
+                </div>
+                <div class="insta-item">
+                    <div class="insta-item-inner"><svg class="insta-ph-icon" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none" stroke="#C9A84C" stroke-width=".8">
+                            <path d="M16 4C16 4 6 12 6 20c0 6 4 10 10 10s10-4 10-10c0-8-10-16-10-16z" />
+                        </svg><span class="insta-ph-num">Post 2</span></div>
+                    <div class="insta-item-overlay"><span class="insta-overlay-icon">♥</span></div>
+                </div>
+                <div class="insta-item">
+                    <div class="insta-item-inner"><svg class="insta-ph-icon" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none" stroke="#C9A84C" stroke-width=".8">
+                            <rect x="4" y="8" width="24" height="18" rx="2" />
+                            <path d="M4 14h24M12 8V4M20 8V4" />
+                        </svg><span class="insta-ph-num">Post 3</span></div>
+                    <div class="insta-item-overlay"><span class="insta-overlay-icon">♥</span></div>
+                </div>
+                <div class="insta-item">
+                    <div class="insta-item-inner"><svg class="insta-ph-icon" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none" stroke="#C9A84C" stroke-width=".8">
+                            <path d="M16 4l16 6-16 6L0 10z" />
+                            <path d="M10 22v-8M22 22v-8" />
+                            <path d="M4 22h24" />
+                        </svg><span class="insta-ph-num">Post 4</span></div>
+                    <div class="insta-item-overlay"><span class="insta-overlay-icon">♥</span></div>
+                </div>
+                <div class="insta-item">
+                    <div class="insta-item-inner"><svg class="insta-ph-icon" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none" stroke="#C9A84C" stroke-width=".8">
+                            <path d="M8 28l0-12L16 6l8 10v12" />
+                            <rect x="12" y="20" width="8" height="8" />
+                        </svg><span class="insta-ph-num">Post 5</span></div>
+                    <div class="insta-item-overlay"><span class="insta-overlay-icon">♥</span></div>
+                </div>
+                <div class="insta-item"
+                    style="background:rgba(201,168,76,.05);display:flex;align-items:center;justify-content:center;"><a
+                        href="https://instagram.com/joestouch_" target="_blank"
+                        style="text-align:center;text-decoration:none;padding:1.5rem;">
+                        <p
+                            style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold);line-height:1.4;">
+                            See all<br>posts →</p>
+                        <p
+                            style="font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dim);margin-top:.5rem;">
+                            @joestouch_</p>
+                    </a></div>
+            </div>
+            <div class="insta-follow reveal" style="margin-top:3rem;">
+                <a href="https://instagram.com/joestouch_" target="_blank" class="btn-gold"><span>Follow @joestouch_
+                        →</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="faq-inner">
+            <div class="faq-header reveal">
+                <p class="section-eyebrow">Common Questions</p>
+                <h2 class="section-title" style="text-align:center;">Before you<br><em>reach out</em></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="reveal">
+                <div class="faq-item"><input class="faq-input" type="checkbox" id="faq1"><label class="faq-label"
+                        for="faq1">How far in advance should I book?<span class="faq-icon">+</span></label>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 4–6 weeks before your event date, and 3–6 months for weddings.
+                            Popular dates fill quickly — especially peak season weekends in Port Harcourt. Reach out as
+                            early as possible to secure yours.</p>
+                    </div>
+                </div>
+                <div class="faq-item"><input class="faq-input" type="checkbox" id="faq2"><label class="faq-label"
+                        for="faq2">Do you travel outside Port Harcourt?<span class="faq-icon">+</span></label>
+                    <div class="faq-answer">
+                        <p>Yes. Joe's Touch serves clients across Rivers State and neighbouring states. Travel and
+                            logistics fees apply for events outside Port Harcourt — contact us with your location for a
+                            custom quote.</p>
+                    </div>
+                </div>
+                <div class="faq-item"><input class="faq-input" type="checkbox" id="faq3"><label class="faq-label"
+                        for="faq3">Can you work with custom or themed events?<span class="faq-icon">+</span></label>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every event we style starts with a consultation where we understand your vision,
+                            theme, and colour palette. We then design a bespoke setup around it — not a templated one.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item"><input class="faq-input" type="checkbox" id="faq4"><label class="faq-label"
+                        for="faq4">Do you offer full event styling packages?<span class="faq-icon">+</span></label>
+                    <div class="faq-answer">
+                        <p>Yes. We offer everything from individual centrepiece styling to complete venue transformation
+                            — florals, lighting, dais, table settings, welcome arrangements, and breakdown. Ask us about
+                            our full-service packages during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item"><input class="faq-input" type="checkbox" id="faq5"><label class="faq-label"
+                        for="faq5">How do I get a quote?<span class="faq-icon">+</span></label>
+                    <div class="faq-answer">
+                        <p>The easiest way is to send us a WhatsApp message on 09038815427 with your event date, type,
+                            venue, and any inspiration images you have. We'll get back to you with a tailored quote
+                            within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="cta">
+        <div class="cta-bg"></div>
+        <div class="cta-bg-text">EXCELLENCE</div>
+        <div class="cta-inner reveal">
+            <p class="section-eyebrow" style="margin-bottom:2rem;">Ready?</p>
+            <h2 class="cta-title">Ready to create<br>something <em>unforgettable?</em></h2>
+            <p class="cta-sub">Book your event today and let Joe's Touch bring your vision to life — one detail at a
+                time.</p>
+            <div class="cta-btns">
+                <a href="https://wa.me/2349038815427" class="btn-gold" target="_blank"><span>Book via WhatsApp
+                        →</span></a>
+                <a href="#contact" class="btn-ghost">Send a Message</a>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact">
         <div class="contact-inner">
-            <div class="contact-left reveal">
+            <div class="reveal">
                 <p class="section-eyebrow">Make Contact</p>
-                <h2 class="section-title" style="margin-bottom:3.5rem;">Let's create<br>something <em>beautiful</em>
-                </h2>
+                <h2 class="section-title" style="margin-bottom:3rem;">Let's create<br>something <em>beautiful</em></h2>
                 <div class="contact-detail">
-                    <p class="contact-detail-label">Phone & WhatsApp</p>
-                    <a href="tel:+2349038815427" class="contact-detail-value">+234 903 881 5427</a>
+                    <p class="contact-detail-label">Phone & WhatsApp</p><a href="tel:+2349038815427"
+                        class="contact-detail-value">+234 903 881 5427</a>
                 </div>
                 <div class="contact-detail">
-                    <p class="contact-detail-label">WhatsApp Direct</p>
-                    <a href="https://wa.me/2349038815427" class="contact-detail-value" target="_blank">Chat on WhatsApp
-                        →</a>
+                    <p class="contact-detail-label">WhatsApp Direct</p><a href="https://wa.me/2349038815427"
+                        class="contact-detail-value" target="_blank">Chat on WhatsApp →</a>
                 </div>
                 <div class="contact-detail">
-                    <p class="contact-detail-label">Location</p>
-                    <span class="contact-detail-value" style="cursor:default;">Port Harcourt, Rivers State,
-                        Nigeria</span>
+                    <p class="contact-detail-label">Instagram</p><a href="https://instagram.com/joestouch_"
+                        class="contact-detail-value" target="_blank">@joestouch_</a>
+                </div>
+                <div class="contact-detail">
+                    <p class="contact-detail-label">Location</p><span class="contact-detail-value"
+                        style="cursor:default;">Port Harcourt, Rivers State, Nigeria</span>
                 </div>
                 <div class="social-links">
                     <a href="https://instagram.com/joestouch_" class="social-link" target="_blank">Instagram</a>
@@ -619,44 +888,26 @@
                     <a href="#" class="social-link">Facebook</a>
                 </div>
             </div>
-            <div class="contact-right reveal">
-                <div class="form-group">
-                    <label class="form-label">Your Name</label>
-                    <input type="text" class="form-input" placeholder="Full name">
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Phone Number</label>
-                    <input type="tel" class="form-input" placeholder="+234 XXX XXX XXXX">
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Event Type</label>
-                    <input type="text" class="form-input" placeholder="Wedding, Birthday, Corporate...">
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Event Date</label>
-                    <input type="text" class="form-input" placeholder="DD / MM / YYYY">
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Tell us your vision</label>
-                    <textarea class="form-textarea" rows="4" placeholder="Describe your dream event..."></textarea>
-                </div>
+            <div class="reveal">
+                <div class="form-group"><label class="form-label">Your Name</label><input type="text" class="form-input"
+                        placeholder="Full name"></div>
+                <div class="form-group"><label class="form-label">Phone Number</label><input type="tel"
+                        class="form-input" placeholder="+234 XXX XXX XXXX"></div>
+                <div class="form-group"><label class="form-label">Event Type</label><input type="text"
+                        class="form-input" placeholder="Wedding, Birthday, Corporate..."></div>
+                <div class="form-group"><label class="form-label">Event Date</label><input type="text"
+                        class="form-input" placeholder="DD / MM / YYYY"></div>
+                <div class="form-group"><label class="form-label">Your Vision</label><textarea class="form-textarea"
+                        rows="4" placeholder="Describe your dream event..."></textarea></div>
                 <a href="https://wa.me/2349038815427" target="_blank" class="btn-gold"
                     style="margin-top:1rem;display:inline-block;"><span>Send via WhatsApp →</span></a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <!-- <footer>
-        <div class="footer-logo">Joe's Touch</div>
-        <div class="footer-copy">© 2026 Joe's Touch · Port Harcourt · ...a touch of excellence</div>
-    </footer> -->
     <footer>
-        <span>© Designed and developed by Richard Raphael.</span>
-        <div class="socials">
-            <a href="https://richardraphael.com" target="_blank" rel="noopener">View portfolio</a>
-            <a href="https://www.linkedin.com/in/rich-tech123" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+        <div class="footer-logo">Joe's Touch</div>
+        <div class="footer-copy">© 2026 Joe's Touch · Port Harcourt, Nigeria · ...a touch of excellence</div>
     </footer>
 
     <script src="./script.js"></script>

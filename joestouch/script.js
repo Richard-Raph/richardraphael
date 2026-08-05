@@ -1,89 +1,61 @@
-// Cursor
-const cursor = document.getElementById('cursor');
-const ring = document.getElementById('cursorRing');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-(function anim() {
-    cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
-    rx += (mx - rx) * .12; ry += (my - ry) * .12;
-    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-    requestAnimationFrame(anim);
-})();
-
-// Scroll reveal
-const revEls = document.querySelectorAll('.reveal');
-new IntersectionObserver((es) => {
-    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-}, { threshold: .1, rootMargin: '0px 0px -60px 0px' }).observe ?
-    revEls.forEach(el => new IntersectionObserver((es) => {
-        es.forEach(e => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), 100); } });
-    }, { threshold: .1 }).observe(el)) : null;
-
-// Nav scroll
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-    nav.style.background = window.scrollY > 80 ? 'rgba(8,8,8,.97)' : '';
+// PRELOADER
+window.addEventListener('load', () => {
+    setTimeout(() => { document.getElementById('preloader').classList.add('done'); }, 2000);
 });
 
-// Gallery filter with View Transitions API
-const filterBtns = document.querySelectorAll('.filter-btn');
-const galleryItems = document.querySelectorAll('.gallery-item');
-filterBtns.forEach(btn => {
+// CURSOR
+const cursor = document.getElementById('cursor'), ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function a() { cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; rx += (mx - rx) * .12; ry += (my - ry) * .12; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(a); })();
+
+// NAV
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+
+// SCROLL REVEAL
+document.querySelectorAll('.reveal').forEach(el => {
+    new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); } }, { threshold: .08, rootMargin: '0px 0px -40px 0px' }).observe(el);
+});
+
+// GALLERY FILTER with View Transitions
+document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const f = btn.dataset.filter;
-        const doFilter = () => {
-            galleryItems.forEach(item => {
-                const match = f === 'all' || item.dataset.cat === f;
-                item.classList.toggle('hidden', !match);
-            });
-        };
-        if (document.startViewTransition) {
-            document.startViewTransition(doFilter);
-        } else {
-            doFilter();
-        }
+        const run = () => document.querySelectorAll('.gallery-item').forEach(item => {
+            item.classList.toggle('hidden', f !== 'all' && item.dataset.cat !== f);
+        });
+        document.startViewTransition ? document.startViewTransition(run) : run();
     });
 });
 
-// Testimonials slider
+// TESTIMONIALS
 const track = document.getElementById('testiTrack');
 const dots = document.querySelectorAll('.testi-dot');
-const progress = document.getElementById('testiProgress');
-const total = 5;
-let current = 0;
-let autoTimer;
+const prog = document.getElementById('testiProgress');
+let cur = 0, total = 5, timer;
+function goTo(i) { cur = i; track.scrollTo({ left: track.offsetWidth * i, behavior: 'smooth' }); dots.forEach((d, j) => d.classList.toggle('active', j === i)); prog.style.width = ((i + 1) / total * 100) + '%'; }
+dots.forEach(d => d.addEventListener('click', () => { clearInterval(timer); goTo(+d.dataset.idx); start(); }));
+track.addEventListener('scroll', () => { const i = Math.round(track.scrollLeft / track.offsetWidth); if (i !== cur) { cur = i; dots.forEach((d, j) => d.classList.toggle('active', j === i)); prog.style.width = ((i + 1) / total * 100) + '%'; } }, { passive: true });
+function start() { timer = setInterval(() => goTo((cur + 1) % total), 4500); }
+start(); prog.style.width = (1 / total * 100) + '%';
 
-function goTo(idx) {
-    current = idx;
-    const slideW = track.offsetWidth;
-    track.scrollTo({ left: slideW * idx, behavior: 'smooth' });
-    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-    progress.style.width = ((idx + 1) / total * 100) + '%';
+// BEFORE / AFTER SLIDER
+const baWrap = document.getElementById('baWrap');
+const baAfter = document.getElementById('baAfter');
+const baDivider = document.getElementById('baDivider');
+let dragging = false;
+function setBA(x) {
+    const rect = baWrap.getBoundingClientRect();
+    let pct = Math.max(5, Math.min(95, ((x - rect.left) / rect.width) * 100));
+    baAfter.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+    baDivider.style.left = pct + '%';
 }
-
-// dot clicks
-dots.forEach(d => d.addEventListener('click', () => {
-    clearInterval(autoTimer);
-    goTo(+d.dataset.idx);
-    startAuto();
-}));
-
-// sync dots on native scroll
-track.addEventListener('scroll', () => {
-    const idx = Math.round(track.scrollLeft / track.offsetWidth);
-    if (idx !== current) {
-        current = idx;
-        dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-        progress.style.width = ((idx + 1) / total * 100) + '%';
-    }
-}, { passive: true });
-
-function startAuto() {
-    autoTimer = setInterval(() => {
-        goTo((current + 1) % total);
-    }, 4500);
-}
-startAuto();
-progress.style.width = ((1) / total * 100) + '%';
+baWrap.addEventListener('mousedown', e => { dragging = true; setBA(e.clientX); });
+window.addEventListener('mousemove', e => { if (dragging) setBA(e.clientX); });
+window.addEventListener('mouseup', () => dragging = false);
+baWrap.addEventListener('touchstart', e => { dragging = true; setBA(e.touches[0].clientX); }, { passive: true });
+window.addEventListener('touchmove', e => { if (dragging) setBA(e.touches[0].clientX); }, { passive: true });
+window.addEventListener('touchend', () => dragging = false);
