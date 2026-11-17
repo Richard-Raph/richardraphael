@@ -1,0 +1,50 @@
+# Richard Raphael
+
+> Software Developer
+> Full-Stack Web and Mobile Developer
+> and Coding Instructor.
+
+Website: https://richardraphael.com/
+
+## Professional Profile
+
+Richard Raphael is a software developer based
+in Nigeria.
+
+He specializes in:
+- TypeScript
+- Database
+- JavaScript
+- React
+- Bun
+- Node.js
+- Next.js
+- Docker
+- Express
+- React Native
+- Nest.js
+- MongoDb
+- Expo
+- Supabase
+- SQL
+- Firebase
+
+## Professional Experience
+
+- Lead Web Development Instructor
+  at MyTeacher Institute.
+- Has trained and mentored over 100 learners.
+
+## Projects
+
+- Other documented software projects
+
+## Profiles
+
+- X: https://x.com/rich_tech123
+- GitHub: https://github.com/Richard-Raph
+- LinkedIn: https://linkedin.com/in/rich-tech123
+
+## Contact
+
+Visit the website for professional inquiries.

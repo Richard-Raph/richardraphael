@@ -1,10 +1,13 @@
-const $ = s => document.querySelector(s);
+const $ = selector => document.querySelector(selector);
 
-const cta = (t, s) => `<section class="cta"><div class="w"><h2>${t}</h2><p>${s}</p><a class="btn g" href="#contact">Schedule your free review</a></div></section>`;
+const cta = (title, text) =>
+    `<section class="cta"><div class="w"><h2>${title}</h2><p>${text}</p><a class="btn g" href="#contact">Schedule your free review</a></div></section>`;
 
-const hero = (e, h, p, x = '') => `<div class="hero"><div class="w fade"><div class="eb">${e}</div><h1>${h}</h1><p>${p}</p>${x}</div></div>`;
+const hero = (eyebrow, title, text, actions = '') =>
+    `<div class="hero"><div class="w fade"><div class="eb">${eyebrow}</div><h1>${title}</h1><p>${text}</p>${actions}</div></div>`;
 
-const faq = a => a.map(([q, r]) => `<details><summary>${q}</summary><p>${r}</p></details>`).join('');
+const faq = questions =>
+    questions.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join('');
 
 const PR = {
     'term-life': { i: 'T', n: 'Term Life Insurance', h: 'Precision protection for <em>life’s critical timelines</em>', p: 'Affordable coverage for a set period. Ideal for mortgages, business start-up debts and the years you’re raising children.', who: ['Parents with young children', 'New homeowners', 'Business owners with debt'], st: ['Tell me about your income, debts and goals', 'I compare carriers across the whole market', 'You choose the plan you understand and love'], q: [['How long should a term last?', 'Match it to your longest obligation, such as a mortgage or the years until your children are independent.'], ['Can I convert it later?', 'Many policies include a conversion option to permanent coverage. We’ll check the details together.']] },
@@ -36,14 +39,62 @@ ${Object.entries(PR).map(([k, d]) => `<a class="card" href="#${k}"><div class="i
 
 Object.keys(PR).forEach(k => pages[k] = () => prod(k));
 
-const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
+const fmt = number => '$' + Math.round(number).toLocaleString('en-US');
 
 function route() {
-    let r = location.hash.slice(1); if (!pages[r]) r = 'home'; $('#app').innerHTML = pages[r](); document.querySelectorAll('.menu a[data-r]').forEach(a => a.classList.toggle('on', a.dataset.r === r)); $('#menu').classList.remove('open'); window.scrollTo(0, 0);
-    document.title = (PR[r] ? PR[r].n + ' | ' : '') + 'Slymo Financial';
-    if (r === 'home') { const u = () => { const v = id => Math.max(0, +$(id).value || 0); $('#out').textContent = fmt(v('#inc') * v('#yrs') + v('#dbt')) };['#inc', '#yrs', '#dbt'].forEach(i => $(i).oninput = u); u() }
-    if (r === 'insights') { const u = () => { const x = +$('#rt').value; $('#o72').textContent = x > 0 ? (72 / x).toFixed(1) + ' years' : '–' }; $('#rt').oninput = u; u() }
-    if (r === 'contact') { $('#f').onsubmit = e => { e.preventDefault(); const b = `Name: ${$('#n').value}%0D%0APhone: ${encodeURIComponent($('#p').value)}%0D%0AInterest: ${encodeURIComponent($('#i').value)}%0D%0A%0D%0A${encodeURIComponent($('#m').value)}`; $('#ok').textContent = 'Opening your email app to send…'; location.href = `mailto:info@slymofinancial.com?subject=Free%20review%20request&body=${b}` } }
+    let routeName = location.hash.slice(1);
+    if (!pages[routeName]) routeName = 'home';
+
+    $('#app').innerHTML = pages[routeName]();
+    document.querySelectorAll('.menu a[data-r]').forEach(link => {
+        link.classList.toggle('on', link.dataset.r === routeName);
+    });
+    $('#menu').classList.remove('open');
+    window.scrollTo(0, 0);
+
+    document.title = (PR[routeName] ? PR[routeName].n + ' | ' : '') + 'Slymo Financial';
+
+    if (routeName === 'home') {
+        const updateCoverageEstimate = () => {
+            const value = selector => Math.max(0, +$(selector).value || 0);
+            $('#out').textContent = fmt(
+                value('#inc') * value('#yrs') + value('#dbt')
+            );
+        };
+
+        ['#inc', '#yrs', '#dbt'].forEach(selector => {
+            $(selector).oninput = updateCoverageEstimate;
+        });
+        updateCoverageEstimate();
+    }
+
+    if (routeName === 'insights') {
+        const updateDoublingTime = () => {
+            const rate = +$('#rt').value;
+            $('#o72').textContent = rate > 0 ? (72 / rate).toFixed(1) + ' years' : '–';
+        };
+
+        $('#rt').oninput = updateDoublingTime;
+        updateDoublingTime();
+    }
+
+    if (routeName === 'contact') {
+        $('#f').onsubmit = event => {
+            event.preventDefault();
+
+            const body =
+                `Name: ${$('#n').value}%0D%0A` +
+                `Phone: ${encodeURIComponent($('#p').value)}%0D%0A` +
+                `Interest: ${encodeURIComponent($('#i').value)}%0D%0A%0D%0A` +
+                encodeURIComponent($('#m').value);
+
+            $('#ok').textContent = 'Opening your email app to send…';
+            location.href = `mailto:info@slymofinancial.com?subject=Free%20review%20request&body=${body}`;
+        };
+    }
 }
 
-addEventListener('hashchange', route); $('#bg').onclick = () => $('#menu').classList.toggle('open'); $('#yr').textContent = new Date().getFullYear(); route();
+addEventListener('hashchange', route);
+$('#bg').onclick = () => $('#menu').classList.toggle('open');
+$('#yr').textContent = new Date().getFullYear();
+route();
