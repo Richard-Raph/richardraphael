@@ -15,10 +15,12 @@ const PR = {
     'final-expense': { i: 'F', n: 'Final Expense & Annuities', h: 'Zero-burden planning, <em>guaranteed income layers</em>', p: 'Make sure your family faces no sudden out-of-pocket stress, and explore retirement income options built to last.', who: ['Seniors and pre-retirees', 'Anyone protecting loved ones from costs', 'Savers seeking steadier retirement income'], st: ['We estimate final costs and income needs', 'I compare final expense and annuity options', 'We set it up in plain language, no pressure'], q: [['What does final expense cover?', 'Funeral, burial and related costs, so your family isn’t left to pay them.'], ['What is a fixed index annuity?', 'An insurance contract designed for retirement income, with features that vary by carrier. We’ll walk through every term.']] },
     'health': { i: 'H', n: 'Accident & Health Coverage', h: 'Living benefits that <em>shield your savings</em>', p: 'Strong protection against unexpected medical disruptions and sudden injury costs, including options for immigrants and the self-employed.', who: ['Self-employed and gig workers', 'Newcomers to the U.S.', 'Families wanting a safety net'], st: ['We discuss your health needs and budget', 'I shop accident, health and HMO options', 'You enrol with every cost made clear'], q: [['Can immigrants get coverage?', 'Options depend on status and state. Ask me and I’ll explain what is available.'], ['What does accident coverage do?', 'It pays benefits for covered injuries so a surprise doesn’t drain your savings.']] }
 };
+
 const prod = k => {
     const d = PR[k]; return hero('Solutions', d.h, d.p, '<div class="row"><a class="btn g" href="#contact">Get my free review</a><a class="btn o" href="#home">Back home</a></div>') +
         `<section><div class="w two"><div><h2>Who it’s for</h2><ul class="ck">${d.who.map(x => `<li>${x}</li>`).join('')}</ul></div><div class="steps"><h2>How it works</h2>${d.st.map(x => `<p class="step">${x}</p>`).join('')}</div></div></section><section class="alt"><div class="w"><h2>Common questions</h2>${faq(d.q)}</div></section>` + cta('Let’s find the right fit', 'Independent means I work for you, not one carrier.')
 };
+
 const pages = {
     home: () => hero('Smart financial education & legacy preservation', 'Protect your family. <em>Build lasting wealth.</em>', 'I’m Sylvanus, an independent broker. I clear away insurance confusion and map a path you can trust, in plain language and without pressure.', '<div class="row"><a class="btn g" href="#contact">Schedule your free review</a><a class="btn o" href="#about">Meet Sylvanus</a></div>') +
         `<section><div class="w"><div class="eb">Your journey</div><h2>Tailored protection for your story</h2><div class="grid">
@@ -95,6 +97,9 @@ function route() {
 }
 
 addEventListener('hashchange', route);
+
 $('#bg').onclick = () => $('#menu').classList.toggle('open');
+
 $('#yr').textContent = new Date().getFullYear();
+
 route();
